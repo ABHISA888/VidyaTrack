@@ -1,0 +1,316 @@
+Year,State,District,Grade,Metric_Type,Value,School_Type,Gender,Source
+2019,All India,NA,Grade 3,Story_Reading_%,27.3,All,All,ASER Rural Report
+2019,All India,NA,Grade 5,Arith_Level_Addition_%,15.4,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Arith_Level_Cannot_Recognize_%,4.3,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Arith_Level_Division_%,27.9,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Arith_Level_Number_Recognition_%,8.2,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Arith_Level_Subtraction_%,44.2,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Division_Arithmetic_%,27.9,All,All,ASER Rural Report
+2019,All India,NA,Grade 5,Division_Arithmetic_%,28.4,All,Boys,ASER Rural Report
+2019,All India,NA,Grade 5,Division_Arithmetic_%,27.3,All,Girls,ASER Rural Report
+2019,All India,NA,Grade 5,Division_Arithmetic_%,22.4,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Division_Arithmetic_%,40.1,Private,All,ASER Rural Report
+2019,All India,NA,Grade 5,Reading_Level_Cannot_Read_%,7.2,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Reading_Level_Letters_%,12.8,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Reading_Level_Paragraph_%,14.2,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Reading_Level_Story_%,50.5,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Reading_Level_Words_%,15.3,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Story_Reading_%,50.5,All,All,ASER Rural Report
+2019,All India,NA,Grade 5,Story_Reading_%,49.2,All,Boys,ASER Rural Report
+2019,All India,NA,Grade 5,Story_Reading_%,52.1,All,Girls,ASER Rural Report
+2019,All India,NA,Grade 5,Story_Reading_%,42.8,Government,All,ASER Rural Report
+2019,All India,NA,Grade 5,Story_Reading_%,65.3,Private,All,ASER Rural Report
+2019,All India,NA,Grade 8,Division_Arithmetic_%,44.3,All,All,ASER Rural Report
+2019,All India,NA,Grade 8,Story_Reading_%,73.0,All,All,ASER Rural Report
+2019,Assam,NA,Grade 5,Division_Arithmetic_%,24.8,All,All,ASER Rural Report
+2019,Assam,NA,Grade 5,Story_Reading_%,46.3,All,All,ASER Rural Report
+2019,Bihar,NA,Grade 5,Division_Arithmetic_%,16.2,All,All,ASER Rural Report
+2019,Bihar,NA,Grade 5,Story_Reading_%,33.1,All,All,ASER Rural Report
+2019,Chhattisgarh,NA,Grade 5,Division_Arithmetic_%,20.3,All,All,ASER Rural Report
+2019,Chhattisgarh,NA,Grade 5,Story_Reading_%,40.1,All,All,ASER Rural Report
+2019,Gujarat,NA,Grade 5,Division_Arithmetic_%,29.8,All,All,ASER Rural Report
+2019,Gujarat,NA,Grade 5,Story_Reading_%,53.4,All,All,ASER Rural Report
+2019,Haryana,NA,Grade 5,Division_Arithmetic_%,31.2,All,All,ASER Rural Report
+2019,Haryana,NA,Grade 5,Story_Reading_%,55.7,All,All,ASER Rural Report
+2019,Himachal Pradesh,NA,Grade 5,Division_Arithmetic_%,48.3,All,All,ASER Rural Report
+2019,Himachal Pradesh,NA,Grade 5,Story_Reading_%,75.1,All,All,ASER Rural Report
+2019,Jharkhand,NA,Grade 5,Division_Arithmetic_%,18.5,All,All,ASER Rural Report
+2019,Jharkhand,NA,Grade 5,Story_Reading_%,37.8,All,All,ASER Rural Report
+2019,Karnataka,NA,Grade 5,Division_Arithmetic_%,34.2,All,All,ASER Rural Report
+2019,Karnataka,NA,Grade 5,Story_Reading_%,58.9,All,All,ASER Rural Report
+2019,Kerala,NA,Grade 5,Division_Arithmetic_%,62.3,All,All,ASER Rural Report
+2019,Kerala,NA,Grade 5,Story_Reading_%,85.2,All,All,ASER Rural Report
+2019,Madhya Pradesh,NA,Grade 5,Division_Arithmetic_%,24.1,All,All,ASER Rural Report
+2019,Madhya Pradesh,NA,Grade 5,Story_Reading_%,44.6,All,All,ASER Rural Report
+2019,Maharashtra,NA,Grade 5,Division_Arithmetic_%,38.4,All,All,ASER Rural Report
+2019,Maharashtra,NA,Grade 5,Story_Reading_%,62.3,All,All,ASER Rural Report
+2019,Meghalaya,NA,Grade 5,Division_Arithmetic_%,37.4,All,All,ASER Rural Report
+2019,Meghalaya,NA,Grade 5,Story_Reading_%,61.2,All,All,ASER Rural Report
+2019,Odisha,NA,Grade 5,Division_Arithmetic_%,22.4,All,All,ASER Rural Report
+2019,Odisha,NA,Grade 5,Story_Reading_%,42.8,All,All,ASER Rural Report
+2019,Punjab,NA,Grade 5,Division_Arithmetic_%,45.6,All,All,ASER Rural Report
+2019,Punjab,NA,Grade 5,Story_Reading_%,72.3,All,All,ASER Rural Report
+2019,Rajasthan,NA,Grade 5,Division_Arithmetic_%,21.3,All,All,ASER Rural Report
+2019,Rajasthan,NA,Grade 5,Story_Reading_%,41.2,All,All,ASER Rural Report
+2019,Tamil Nadu,NA,Grade 5,Division_Arithmetic_%,42.1,All,All,ASER Rural Report
+2019,Tamil Nadu,NA,Grade 5,Story_Reading_%,68.4,All,All,ASER Rural Report
+2019,Tripura,NA,Grade 5,Division_Arithmetic_%,39.2,All,All,ASER Rural Report
+2019,Tripura,NA,Grade 5,Story_Reading_%,63.7,All,All,ASER Rural Report
+2019,Uttar Pradesh,NA,Grade 5,Division_Arithmetic_%,19.1,All,All,ASER Rural Report
+2019,Uttar Pradesh,NA,Grade 5,Story_Reading_%,38.4,All,All,ASER Rural Report
+2019,Uttarakhand,NA,Grade 5,Division_Arithmetic_%,41.2,All,All,ASER Rural Report
+2019,Uttarakhand,NA,Grade 5,Story_Reading_%,66.8,All,All,ASER Rural Report
+2019,West Bengal,NA,Grade 5,Division_Arithmetic_%,27.6,All,All,ASER Rural Report
+2019,West Bengal,NA,Grade 5,Story_Reading_%,51.2,All,All,ASER Rural Report
+2021,All India,NA,Grade 3,Story_Reading_%,20.9,All,All,ASER Rural Report
+2021,All India,NA,Grade 5,Arith_Level_Addition_%,17.6,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Arith_Level_Cannot_Recognize_%,5.8,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Arith_Level_Division_%,25.9,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Arith_Level_Number_Recognition_%,10.1,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Arith_Level_Subtraction_%,40.6,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Division_Arithmetic_%,25.9,All,All,ASER Rural Report
+2021,All India,NA,Grade 5,Division_Arithmetic_%,25.2,All,Boys,ASER Rural Report
+2021,All India,NA,Grade 5,Division_Arithmetic_%,26.8,All,Girls,ASER Rural Report
+2021,All India,NA,Grade 5,Division_Arithmetic_%,19.1,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Division_Arithmetic_%,36.4,Private,All,ASER Rural Report
+2021,All India,NA,Grade 5,Reading_Level_Cannot_Read_%,9.1,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Reading_Level_Letters_%,15.3,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Reading_Level_Paragraph_%,15.0,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Reading_Level_Story_%,42.2,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Reading_Level_Words_%,18.4,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Story_Reading_%,42.8,All,All,ASER Rural Report
+2021,All India,NA,Grade 5,Story_Reading_%,41.6,All,Boys,ASER Rural Report
+2021,All India,NA,Grade 5,Story_Reading_%,44.3,All,Girls,ASER Rural Report
+2021,All India,NA,Grade 5,Story_Reading_%,35.4,Government,All,ASER Rural Report
+2021,All India,NA,Grade 5,Story_Reading_%,58.2,Private,All,ASER Rural Report
+2021,All India,NA,Grade 8,Division_Arithmetic_%,39.1,All,All,ASER Rural Report
+2021,All India,NA,Grade 8,Story_Reading_%,67.6,All,All,ASER Rural Report
+2021,Assam,NA,Grade 5,Division_Arithmetic_%,19.6,All,All,ASER Rural Report
+2021,Assam,NA,Grade 5,Story_Reading_%,39.1,All,All,ASER Rural Report
+2021,Bihar,NA,Grade 5,Division_Arithmetic_%,12.8,All,All,ASER Rural Report
+2021,Bihar,NA,Grade 5,Story_Reading_%,26.4,All,All,ASER Rural Report
+2021,Chhattisgarh,NA,Grade 5,Division_Arithmetic_%,15.9,All,All,ASER Rural Report
+2021,Chhattisgarh,NA,Grade 5,Story_Reading_%,32.8,All,All,ASER Rural Report
+2021,Gujarat,NA,Grade 5,Division_Arithmetic_%,24.1,All,All,ASER Rural Report
+2021,Gujarat,NA,Grade 5,Story_Reading_%,45.6,All,All,ASER Rural Report
+2021,Haryana,NA,Grade 5,Division_Arithmetic_%,25.8,All,All,ASER Rural Report
+2021,Haryana,NA,Grade 5,Story_Reading_%,47.3,All,All,ASER Rural Report
+2021,Himachal Pradesh,NA,Grade 5,Division_Arithmetic_%,42.1,All,All,ASER Rural Report
+2021,Himachal Pradesh,NA,Grade 5,Story_Reading_%,68.4,All,All,ASER Rural Report
+2021,Jharkhand,NA,Grade 5,Division_Arithmetic_%,14.2,All,All,ASER Rural Report
+2021,Jharkhand,NA,Grade 5,Story_Reading_%,30.1,All,All,ASER Rural Report
+2021,Karnataka,NA,Grade 5,Division_Arithmetic_%,28.6,All,All,ASER Rural Report
+2021,Karnataka,NA,Grade 5,Story_Reading_%,50.3,All,All,ASER Rural Report
+2021,Kerala,NA,Grade 5,Division_Arithmetic_%,56.1,All,All,ASER Rural Report
+2021,Kerala,NA,Grade 5,Story_Reading_%,79.4,All,All,ASER Rural Report
+2021,Madhya Pradesh,NA,Grade 5,Division_Arithmetic_%,20.3,All,All,ASER Rural Report
+2021,Madhya Pradesh,NA,Grade 5,Story_Reading_%,37.2,All,All,ASER Rural Report
+2021,Maharashtra,NA,Grade 5,Division_Arithmetic_%,32.1,All,All,ASER Rural Report
+2021,Maharashtra,NA,Grade 5,Story_Reading_%,54.7,All,All,ASER Rural Report
+2021,Meghalaya,NA,Grade 5,Division_Arithmetic_%,31.2,All,All,ASER Rural Report
+2021,Meghalaya,NA,Grade 5,Story_Reading_%,53.8,All,All,ASER Rural Report
+2021,Odisha,NA,Grade 5,Division_Arithmetic_%,17.8,All,All,ASER Rural Report
+2021,Odisha,NA,Grade 5,Story_Reading_%,35.6,All,All,ASER Rural Report
+2021,Punjab,NA,Grade 5,Division_Arithmetic_%,39.2,All,All,ASER Rural Report
+2021,Punjab,NA,Grade 5,Story_Reading_%,64.8,All,All,ASER Rural Report
+2021,Rajasthan,NA,Grade 5,Division_Arithmetic_%,18.4,All,All,ASER Rural Report
+2021,Rajasthan,NA,Grade 5,Story_Reading_%,34.5,All,All,ASER Rural Report
+2021,Tamil Nadu,NA,Grade 5,Division_Arithmetic_%,36.4,All,All,ASER Rural Report
+2021,Tamil Nadu,NA,Grade 5,Story_Reading_%,60.2,All,All,ASER Rural Report
+2021,Tripura,NA,Grade 5,Division_Arithmetic_%,33.1,All,All,ASER Rural Report
+2021,Tripura,NA,Grade 5,Story_Reading_%,56.4,All,All,ASER Rural Report
+2021,Uttar Pradesh,NA,Grade 5,Division_Arithmetic_%,15.3,All,All,ASER Rural Report
+2021,Uttar Pradesh,NA,Grade 5,Story_Reading_%,30.2,All,All,ASER Rural Report
+2021,Uttarakhand,NA,Grade 5,Division_Arithmetic_%,35.4,All,All,ASER Rural Report
+2021,Uttarakhand,NA,Grade 5,Story_Reading_%,59.3,All,All,ASER Rural Report
+2021,West Bengal,NA,Grade 5,Division_Arithmetic_%,22.3,All,All,ASER Rural Report
+2021,West Bengal,NA,Grade 5,Story_Reading_%,43.4,All,All,ASER Rural Report
+2022,All India,NA,Grade 3,Story_Reading_%,20.5,All,All,ASER Rural Report
+2022,All India,NA,Grade 5,Arith_Level_Addition_%,17.2,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Arith_Level_Cannot_Recognize_%,5.7,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Arith_Level_Division_%,25.6,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Arith_Level_Number_Recognition_%,9.8,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Arith_Level_Subtraction_%,41.7,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Division_Arithmetic_%,25.6,All,All,ASER Rural Report
+2022,All India,NA,Grade 5,Division_Arithmetic_%,24.8,All,Boys,ASER Rural Report
+2022,All India,NA,Grade 5,Division_Arithmetic_%,26.5,All,Girls,ASER Rural Report
+2022,All India,NA,Grade 5,Division_Arithmetic_%,19.6,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Division_Arithmetic_%,37.2,Private,All,ASER Rural Report
+2022,All India,NA,Grade 5,Reading_Level_Cannot_Read_%,8.8,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Reading_Level_Letters_%,14.9,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Reading_Level_Paragraph_%,15.7,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Reading_Level_Story_%,42.8,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Reading_Level_Words_%,17.8,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Story_Reading_%,42.8,All,All,ASER Rural Report
+2022,All India,NA,Grade 5,Story_Reading_%,41.9,All,Boys,ASER Rural Report
+2022,All India,NA,Grade 5,Story_Reading_%,43.9,All,Girls,ASER Rural Report
+2022,All India,NA,Grade 5,Story_Reading_%,36.1,Government,All,ASER Rural Report
+2022,All India,NA,Grade 5,Story_Reading_%,59.8,Private,All,ASER Rural Report
+2022,All India,NA,Grade 8,Division_Arithmetic_%,44.7,All,All,ASER Rural Report
+2022,All India,NA,Grade 8,Story_Reading_%,69.6,All,All,ASER Rural Report
+2022,Assam,NA,Grade 5,Division_Arithmetic_%,20.9,All,All,ASER Rural Report
+2022,Assam,NA,Grade 5,Story_Reading_%,40.8,All,All,ASER Rural Report
+2022,Bihar,NA,Grade 5,Division_Arithmetic_%,13.1,All,All,ASER Rural Report
+2022,Bihar,NA,Grade 5,Story_Reading_%,27.3,All,All,ASER Rural Report
+2022,Chhattisgarh,NA,Grade 5,Division_Arithmetic_%,17.1,All,All,ASER Rural Report
+2022,Chhattisgarh,NA,Grade 5,Story_Reading_%,34.4,All,All,ASER Rural Report
+2022,Gujarat,NA,Grade 5,Division_Arithmetic_%,25.6,All,All,ASER Rural Report
+2022,Gujarat,NA,Grade 5,Story_Reading_%,47.2,All,All,ASER Rural Report
+2022,Haryana,NA,Grade 5,Division_Arithmetic_%,27.3,All,All,ASER Rural Report
+2022,Haryana,NA,Grade 5,Story_Reading_%,49.1,All,All,ASER Rural Report
+2022,Himachal Pradesh,NA,Grade 5,Division_Arithmetic_%,44.3,All,All,ASER Rural Report
+2022,Himachal Pradesh,NA,Grade 5,Story_Reading_%,70.2,All,All,ASER Rural Report
+2022,Jharkhand,NA,Grade 5,Division_Arithmetic_%,15.0,All,All,ASER Rural Report
+2022,Jharkhand,NA,Grade 5,Story_Reading_%,31.7,All,All,ASER Rural Report
+2022,Karnataka,NA,Grade 5,Division_Arithmetic_%,30.1,All,All,ASER Rural Report
+2022,Karnataka,NA,Grade 5,Story_Reading_%,52.1,All,All,ASER Rural Report
+2022,Kerala,NA,Grade 5,Division_Arithmetic_%,58.4,All,All,ASER Rural Report
+2022,Kerala,NA,Grade 5,Story_Reading_%,81.3,All,All,ASER Rural Report
+2022,Madhya Pradesh,NA,Grade 5,Division_Arithmetic_%,21.5,All,All,ASER Rural Report
+2022,Madhya Pradesh,NA,Grade 5,Story_Reading_%,39.0,All,All,ASER Rural Report
+2022,Maharashtra,NA,Grade 5,Division_Arithmetic_%,33.5,All,All,ASER Rural Report
+2022,Maharashtra,NA,Grade 5,Story_Reading_%,56.2,All,All,ASER Rural Report
+2022,Meghalaya,NA,Grade 5,Division_Arithmetic_%,32.8,All,All,ASER Rural Report
+2022,Meghalaya,NA,Grade 5,Story_Reading_%,55.4,All,All,ASER Rural Report
+2022,Odisha,NA,Grade 5,Division_Arithmetic_%,19.0,All,All,ASER Rural Report
+2022,Odisha,NA,Grade 5,Story_Reading_%,37.1,All,All,ASER Rural Report
+2022,Punjab,NA,Grade 5,Division_Arithmetic_%,41.0,All,All,ASER Rural Report
+2022,Punjab,NA,Grade 5,Story_Reading_%,66.4,All,All,ASER Rural Report
+2022,Rajasthan,NA,Grade 5,Division_Arithmetic_%,19.2,All,All,ASER Rural Report
+2022,Rajasthan,NA,Grade 5,Story_Reading_%,36.1,All,All,ASER Rural Report
+2022,Tamil Nadu,NA,Grade 5,Division_Arithmetic_%,38.2,All,All,ASER Rural Report
+2022,Tamil Nadu,NA,Grade 5,Story_Reading_%,62.8,All,All,ASER Rural Report
+2022,Tripura,NA,Grade 5,Division_Arithmetic_%,34.6,All,All,ASER Rural Report
+2022,Tripura,NA,Grade 5,Story_Reading_%,58.0,All,All,ASER Rural Report
+2022,Uttar Pradesh,NA,Grade 5,Division_Arithmetic_%,16.2,All,All,ASER Rural Report
+2022,Uttar Pradesh,NA,Grade 5,Story_Reading_%,31.0,All,All,ASER Rural Report
+2022,Uttarakhand,NA,Grade 5,Division_Arithmetic_%,37.1,All,All,ASER Rural Report
+2022,Uttarakhand,NA,Grade 5,Story_Reading_%,61.0,All,All,ASER Rural Report
+2022,West Bengal,NA,Grade 5,Division_Arithmetic_%,23.8,All,All,ASER Rural Report
+2022,West Bengal,NA,Grade 5,Story_Reading_%,45.0,All,All,ASER Rural Report
+2023,All India,NA,Grade 3,Story_Reading_%,25.1,All,All,ASER Rural Report
+2023,All India,NA,Grade 5,Arith_Level_Addition_%,15.9,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Arith_Level_Cannot_Recognize_%,4.9,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Arith_Level_Division_%,28.2,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Arith_Level_Number_Recognition_%,8.6,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Arith_Level_Subtraction_%,42.4,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Division_Arithmetic_%,28.2,All,All,ASER Rural Report
+2023,All India,NA,Grade 5,Division_Arithmetic_%,27.5,All,Boys,ASER Rural Report
+2023,All India,NA,Grade 5,Division_Arithmetic_%,29.1,All,Girls,ASER Rural Report
+2023,All India,NA,Grade 5,Division_Arithmetic_%,21.8,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Division_Arithmetic_%,39.3,Private,All,ASER Rural Report
+2023,All India,NA,Grade 5,Reading_Level_Cannot_Read_%,7.5,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Reading_Level_Letters_%,13.1,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Reading_Level_Paragraph_%,15.7,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Reading_Level_Story_%,47.3,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Reading_Level_Words_%,16.4,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Story_Reading_%,47.3,All,All,ASER Rural Report
+2023,All India,NA,Grade 5,Story_Reading_%,46.1,All,Boys,ASER Rural Report
+2023,All India,NA,Grade 5,Story_Reading_%,49.2,All,Girls,ASER Rural Report
+2023,All India,NA,Grade 5,Story_Reading_%,40.2,Government,All,ASER Rural Report
+2023,All India,NA,Grade 5,Story_Reading_%,62.4,Private,All,ASER Rural Report
+2023,All India,NA,Grade 8,Division_Arithmetic_%,46.8,All,All,ASER Rural Report
+2023,All India,NA,Grade 8,Story_Reading_%,72.1,All,All,ASER Rural Report
+2023,Assam,NA,Grade 5,Division_Arithmetic_%,25.1,All,All,ASER Rural Report
+2023,Assam,NA,Grade 5,Story_Reading_%,45.6,All,All,ASER Rural Report
+2023,Bihar,NA,Grade 5,Division_Arithmetic_%,15.2,All,All,ASER Rural Report
+2023,Bihar,NA,Grade 5,Story_Reading_%,30.9,All,All,ASER Rural Report
+2023,Chhattisgarh,NA,Grade 5,Division_Arithmetic_%,20.8,All,All,ASER Rural Report
+2023,Chhattisgarh,NA,Grade 5,Story_Reading_%,38.9,All,All,ASER Rural Report
+2023,Gujarat,NA,Grade 5,Division_Arithmetic_%,29.4,All,All,ASER Rural Report
+2023,Gujarat,NA,Grade 5,Story_Reading_%,52.1,All,All,ASER Rural Report
+2023,Haryana,NA,Grade 5,Division_Arithmetic_%,31.6,All,All,ASER Rural Report
+2023,Haryana,NA,Grade 5,Story_Reading_%,54.3,All,All,ASER Rural Report
+2023,Himachal Pradesh,NA,Grade 5,Division_Arithmetic_%,48.9,All,All,ASER Rural Report
+2023,Himachal Pradesh,NA,Grade 5,Story_Reading_%,74.5,All,All,ASER Rural Report
+2023,Jharkhand,NA,Grade 5,Division_Arithmetic_%,17.8,All,All,ASER Rural Report
+2023,Jharkhand,NA,Grade 5,Story_Reading_%,35.4,All,All,ASER Rural Report
+2023,Karnataka,NA,Grade 5,Division_Arithmetic_%,34.8,All,All,ASER Rural Report
+2023,Karnataka,NA,Grade 5,Story_Reading_%,57.4,All,All,ASER Rural Report
+2023,Kerala,NA,Grade 5,Division_Arithmetic_%,61.9,All,All,ASER Rural Report
+2023,Kerala,NA,Grade 5,Story_Reading_%,84.7,All,All,ASER Rural Report
+2023,Madhya Pradesh,NA,Grade 5,Division_Arithmetic_%,25.6,All,All,ASER Rural Report
+2023,Madhya Pradesh,NA,Grade 5,Story_Reading_%,43.7,All,All,ASER Rural Report
+2023,Maharashtra,NA,Grade 5,Division_Arithmetic_%,37.9,All,All,ASER Rural Report
+2023,Maharashtra,NA,Grade 5,Story_Reading_%,60.8,All,All,ASER Rural Report
+2023,Meghalaya,NA,Grade 5,Division_Arithmetic_%,37.1,All,All,ASER Rural Report
+2023,Meghalaya,NA,Grade 5,Story_Reading_%,60.3,All,All,ASER Rural Report
+2023,Odisha,NA,Grade 5,Division_Arithmetic_%,22.9,All,All,ASER Rural Report
+2023,Odisha,NA,Grade 5,Story_Reading_%,41.4,All,All,ASER Rural Report
+2023,Punjab,NA,Grade 5,Division_Arithmetic_%,45.3,All,All,ASER Rural Report
+2023,Punjab,NA,Grade 5,Story_Reading_%,71.2,All,All,ASER Rural Report
+2023,Rajasthan,NA,Grade 5,Division_Arithmetic_%,22.1,All,All,ASER Rural Report
+2023,Rajasthan,NA,Grade 5,Story_Reading_%,40.3,All,All,ASER Rural Report
+2023,Tamil Nadu,NA,Grade 5,Division_Arithmetic_%,41.5,All,All,ASER Rural Report
+2023,Tamil Nadu,NA,Grade 5,Story_Reading_%,67.1,All,All,ASER Rural Report
+2023,Tripura,NA,Grade 5,Division_Arithmetic_%,39.5,All,All,ASER Rural Report
+2023,Tripura,NA,Grade 5,Story_Reading_%,62.9,All,All,ASER Rural Report
+2023,Uttar Pradesh,NA,Grade 5,Division_Arithmetic_%,18.9,All,All,ASER Rural Report
+2023,Uttar Pradesh,NA,Grade 5,Story_Reading_%,35.1,All,All,ASER Rural Report
+2023,Uttarakhand,NA,Grade 5,Division_Arithmetic_%,41.8,All,All,ASER Rural Report
+2023,Uttarakhand,NA,Grade 5,Story_Reading_%,65.7,All,All,ASER Rural Report
+2023,West Bengal,NA,Grade 5,Division_Arithmetic_%,27.9,All,All,ASER Rural Report
+2023,West Bengal,NA,Grade 5,Story_Reading_%,50.1,All,All,ASER Rural Report
+2024,All India,NA,Grade 3,Story_Reading_%,28.4,All,All,ASER Rural Report
+2024,All India,NA,Grade 5,Arith_Level_Addition_%,14.8,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Arith_Level_Cannot_Recognize_%,4.2,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Arith_Level_Division_%,30.5,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Arith_Level_Number_Recognition_%,7.9,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Arith_Level_Subtraction_%,42.6,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Division_Arithmetic_%,30.5,All,All,ASER Rural Report
+2024,All India,NA,Grade 5,Division_Arithmetic_%,29.8,All,Boys,ASER Rural Report
+2024,All India,NA,Grade 5,Division_Arithmetic_%,31.4,All,Girls,ASER Rural Report
+2024,All India,NA,Grade 5,Division_Arithmetic_%,24.2,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Division_Arithmetic_%,41.8,Private,All,ASER Rural Report
+2024,All India,NA,Grade 5,Reading_Level_Cannot_Read_%,6.8,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Reading_Level_Letters_%,12.2,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Reading_Level_Paragraph_%,15.3,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Reading_Level_Story_%,50.1,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Reading_Level_Words_%,15.6,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Story_Reading_%,50.1,All,All,ASER Rural Report
+2024,All India,NA,Grade 5,Story_Reading_%,48.9,All,Boys,ASER Rural Report
+2024,All India,NA,Grade 5,Story_Reading_%,51.6,All,Girls,ASER Rural Report
+2024,All India,NA,Grade 5,Story_Reading_%,42.9,Government,All,ASER Rural Report
+2024,All India,NA,Grade 5,Story_Reading_%,65.1,Private,All,ASER Rural Report
+2024,All India,NA,Grade 8,Division_Arithmetic_%,49.2,All,All,ASER Rural Report
+2024,All India,NA,Grade 8,Story_Reading_%,74.8,All,All,ASER Rural Report
+2024,Assam,NA,Grade 5,Division_Arithmetic_%,27.8,All,All,ASER Rural Report
+2024,Assam,NA,Grade 5,Story_Reading_%,48.4,All,All,ASER Rural Report
+2024,Bihar,NA,Grade 5,Division_Arithmetic_%,16.8,All,All,ASER Rural Report
+2024,Bihar,NA,Grade 5,Story_Reading_%,33.0,All,All,ASER Rural Report
+2024,Chhattisgarh,NA,Grade 5,Division_Arithmetic_%,23.2,All,All,ASER Rural Report
+2024,Chhattisgarh,NA,Grade 5,Story_Reading_%,41.6,All,All,ASER Rural Report
+2024,Gujarat,NA,Grade 5,Division_Arithmetic_%,32.1,All,All,ASER Rural Report
+2024,Gujarat,NA,Grade 5,Story_Reading_%,55.0,All,All,ASER Rural Report
+2024,Haryana,NA,Grade 5,Division_Arithmetic_%,33.9,All,All,ASER Rural Report
+2024,Haryana,NA,Grade 5,Story_Reading_%,57.2,All,All,ASER Rural Report
+2024,Himachal Pradesh,NA,Grade 5,Division_Arithmetic_%,51.2,All,All,ASER Rural Report
+2024,Himachal Pradesh,NA,Grade 5,Story_Reading_%,76.8,All,All,ASER Rural Report
+2024,Jharkhand,NA,Grade 5,Division_Arithmetic_%,19.3,All,All,ASER Rural Report
+2024,Jharkhand,NA,Grade 5,Story_Reading_%,38.2,All,All,ASER Rural Report
+2024,Karnataka,NA,Grade 5,Division_Arithmetic_%,36.9,All,All,ASER Rural Report
+2024,Karnataka,NA,Grade 5,Story_Reading_%,60.2,All,All,ASER Rural Report
+2024,Kerala,NA,Grade 5,Division_Arithmetic_%,65.2,All,All,ASER Rural Report
+2024,Kerala,NA,Grade 5,Story_Reading_%,87.1,All,All,ASER Rural Report
+2024,Madhya Pradesh,NA,Grade 5,Division_Arithmetic_%,27.2,All,All,ASER Rural Report
+2024,Madhya Pradesh,NA,Grade 5,Story_Reading_%,46.1,All,All,ASER Rural Report
+2024,Maharashtra,NA,Grade 5,Division_Arithmetic_%,40.1,All,All,ASER Rural Report
+2024,Maharashtra,NA,Grade 5,Story_Reading_%,63.4,All,All,ASER Rural Report
+2024,Meghalaya,NA,Grade 5,Division_Arithmetic_%,39.8,All,All,ASER Rural Report
+2024,Meghalaya,NA,Grade 5,Story_Reading_%,63.1,All,All,ASER Rural Report
+2024,Odisha,NA,Grade 5,Division_Arithmetic_%,25.1,All,All,ASER Rural Report
+2024,Odisha,NA,Grade 5,Story_Reading_%,44.2,All,All,ASER Rural Report
+2024,Punjab,NA,Grade 5,Division_Arithmetic_%,47.8,All,All,ASER Rural Report
+2024,Punjab,NA,Grade 5,Story_Reading_%,73.9,All,All,ASER Rural Report
+2024,Rajasthan,NA,Grade 5,Division_Arithmetic_%,23.5,All,All,ASER Rural Report
+2024,Rajasthan,NA,Grade 5,Story_Reading_%,42.8,All,All,ASER Rural Report
+2024,Tamil Nadu,NA,Grade 5,Division_Arithmetic_%,44.8,All,All,ASER Rural Report
+2024,Tamil Nadu,NA,Grade 5,Story_Reading_%,70.3,All,All,ASER Rural Report
+2024,Tripura,NA,Grade 5,Division_Arithmetic_%,42.1,All,All,ASER Rural Report
+2024,Tripura,NA,Grade 5,Story_Reading_%,65.4,All,All,ASER Rural Report
+2024,Uttar Pradesh,NA,Grade 5,Division_Arithmetic_%,20.1,All,All,ASER Rural Report
+2024,Uttar Pradesh,NA,Grade 5,Story_Reading_%,37.2,All,All,ASER Rural Report
+2024,Uttarakhand,NA,Grade 5,Division_Arithmetic_%,44.5,All,All,ASER Rural Report
+2024,Uttarakhand,NA,Grade 5,Story_Reading_%,68.3,All,All,ASER Rural Report
+2024,West Bengal,NA,Grade 5,Division_Arithmetic_%,30.4,All,All,ASER Rural Report
+2024,West Bengal,NA,Grade 5,Story_Reading_%,53.2,All,All,ASER Rural Report

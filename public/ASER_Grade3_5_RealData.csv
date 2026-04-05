@@ -1,0 +1,322 @@
+Year,State,Grade,Grade_Num,Metric,Value,School_Type,Source,Risk_Category,COVID_Impact_Year,Recovery_2022_2024
+2018,All India,Grade 3,3,Reading_AtLevel,20.9,Government,ASER 2018 National Findings,NA,No,NA
+2022,All India,Grade 3,3,Reading_AtLevel,16.3,Government,ASER 2022 National Findings,NA,Yes,NA
+2024,All India,Grade 3,3,Reading_AtLevel,23.4,Government,ASER 2024 National Findings,NA,No,NA
+2018,All India,Grade 4,4,Reading_AtLevel,34.2,Government,ASER 2018 interpolated Gr3-Gr5,NA,No,NA
+2022,All India,Grade 4,4,Reading_AtLevel,28.1,Government,ASER 2022 interpolated Gr3-Gr5,NA,Yes,NA
+2024,All India,Grade 4,4,Reading_AtLevel,35.1,Government,ASER 2024 interpolated Gr3-Gr5,NA,No,NA
+2018,All India,Grade 5,5,Reading_AtLevel,50.5,Government,ASER 2018 National Findings,NA,No,NA
+2022,All India,Grade 5,5,Reading_AtLevel,42.8,Government,ASER 2022 National Findings,NA,Yes,NA
+2024,All India,Grade 5,5,Reading_AtLevel,48.8,Government,ASER 2024 National Findings,NA,No,NA
+2018,All India,Grade 3,3,Arith_Subtraction,28.2,Government,ASER 2018 National Findings,NA,No,NA
+2022,All India,Grade 3,3,Arith_Subtraction,25.9,Government,ASER 2022 National Findings,NA,Yes,NA
+2024,All India,Grade 3,3,Arith_Subtraction,33.7,Government,ASER 2024 National Findings,NA,No,NA
+2018,All India,Grade 4,4,Arith_Subtraction,38.1,Government,ASER 2018 interpolated,NA,No,NA
+2022,All India,Grade 4,4,Arith_Subtraction,32.4,Government,ASER 2022 interpolated,NA,Yes,NA
+2024,All India,Grade 4,4,Arith_Subtraction,41.8,Government,ASER 2024 interpolated,NA,No,NA
+2018,All India,Grade 5,5,Arith_Division,27.9,Government,ASER 2018 National Findings,NA,No,NA
+2022,All India,Grade 5,5,Arith_Division,25.6,Government,ASER 2022 National Findings,NA,Yes,NA
+2024,All India,Grade 5,5,Arith_Division,30.7,Government,ASER 2024 National Findings,NA,No,NA
+2018,All India,Grade 5,5,Arith_Subtraction,55.2,Government,ASER 2018 National Findings,NA,No,NA
+2022,All India,Grade 5,5,Arith_Subtraction,50.1,Government,ASER 2022 National Findings,NA,Yes,NA
+2024,All India,Grade 5,5,Arith_Subtraction,58.3,Government,ASER 2024 National Findings,NA,No,NA
+2018,Bihar,Grade 3,3,Reading_AtLevel,12.8,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Bihar,Grade 4,4,Reading_AtLevel,22.5,Government,ASER 2018 State Findings (Gr4 interpolated),Critical,No,NA
+2018,Bihar,Grade 5,5,Reading_AtLevel,32.1,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Bihar,Grade 3,3,Arith_Subtraction,23.9,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Bihar,Grade 5,5,Arith_Division,17.7,Government,ASER 2018 State Findings,Critical,No,NA
+2022,Bihar,Grade 3,3,Reading_AtLevel,13.2,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Bihar,Grade 4,4,Reading_AtLevel,23.8,Government,ASER 2022 State Findings (Gr4 interpolated),Critical,Yes,NA
+2022,Bihar,Grade 5,5,Reading_AtLevel,34.4,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Bihar,Grade 3,3,Arith_Subtraction,21.9,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Bihar,Grade 5,5,Arith_Division,19.4,Government,ASER 2022 State Findings,Critical,Yes,NA
+2024,Bihar,Grade 3,3,Reading_AtLevel,20.1,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Bihar,Grade 4,4,Reading_AtLevel,29.3,Government,ASER 2024 State Findings (Gr4 interpolated),Critical,No,NA
+2024,Bihar,Grade 5,5,Reading_AtLevel,38.5,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Bihar,Grade 3,3,Arith_Subtraction,28.4,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Bihar,Grade 5,5,Arith_Division,22.1,Government,ASER 2024 State Findings,Critical,No,NA
+2018,Uttar Pradesh,Grade 3,3,Reading_AtLevel,16.5,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Uttar Pradesh,Grade 4,4,Reading_AtLevel,28.4,Government,ASER 2018 State Findings (Gr4 interpolated),Critical,No,NA
+2018,Uttar Pradesh,Grade 5,5,Reading_AtLevel,40.2,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Uttar Pradesh,Grade 3,3,Arith_Subtraction,26.5,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Uttar Pradesh,Grade 5,5,Arith_Division,22.6,Government,ASER 2018 State Findings,Critical,No,NA
+2022,Uttar Pradesh,Grade 3,3,Reading_AtLevel,16.4,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Uttar Pradesh,Grade 4,4,Reading_AtLevel,29.0,Government,ASER 2022 State Findings (Gr4 interpolated),Critical,Yes,NA
+2022,Uttar Pradesh,Grade 5,5,Reading_AtLevel,41.6,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Uttar Pradesh,Grade 3,3,Arith_Subtraction,24.3,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Uttar Pradesh,Grade 5,5,Arith_Division,24.9,Government,ASER 2022 State Findings,Critical,Yes,NA
+2024,Uttar Pradesh,Grade 3,3,Reading_AtLevel,27.9,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Uttar Pradesh,Grade 4,4,Reading_AtLevel,36.0,Government,ASER 2024 State Findings (Gr4 interpolated),Critical,No,NA
+2024,Uttar Pradesh,Grade 5,5,Reading_AtLevel,44.2,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Uttar Pradesh,Grade 3,3,Arith_Subtraction,31.5,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Uttar Pradesh,Grade 5,5,Arith_Division,28.3,Government,ASER 2024 State Findings,Critical,No,NA
+2018,Rajasthan,Grade 3,3,Reading_AtLevel,16.1,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Rajasthan,Grade 4,4,Reading_AtLevel,26.2,Government,ASER 2018 State Findings (Gr4 interpolated),High Risk,No,NA
+2018,Rajasthan,Grade 5,5,Reading_AtLevel,36.4,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Rajasthan,Grade 3,3,Arith_Subtraction,24.5,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Rajasthan,Grade 5,5,Arith_Division,20.5,Government,ASER 2018 State Findings,High Risk,No,NA
+2022,Rajasthan,Grade 3,3,Reading_AtLevel,17.3,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Rajasthan,Grade 4,4,Reading_AtLevel,26.2,Government,ASER 2022 State Findings (Gr4 interpolated),High Risk,Yes,NA
+2022,Rajasthan,Grade 5,5,Reading_AtLevel,35.2,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Rajasthan,Grade 3,3,Arith_Subtraction,22.5,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Rajasthan,Grade 5,5,Arith_Division,22.5,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2024,Rajasthan,Grade 3,3,Reading_AtLevel,21.3,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Rajasthan,Grade 4,4,Reading_AtLevel,30.5,Government,ASER 2024 State Findings (Gr4 interpolated),High Risk,No,NA
+2024,Rajasthan,Grade 5,5,Reading_AtLevel,39.8,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Rajasthan,Grade 3,3,Arith_Subtraction,29.2,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Rajasthan,Grade 5,5,Arith_Division,25.6,Government,ASER 2024 State Findings,High Risk,No,NA
+2018,Madhya Pradesh,Grade 3,3,Reading_AtLevel,15.4,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Madhya Pradesh,Grade 4,4,Reading_AtLevel,25.1,Government,ASER 2018 State Findings (Gr4 interpolated),Critical,No,NA
+2018,Madhya Pradesh,Grade 5,5,Reading_AtLevel,34.8,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Madhya Pradesh,Grade 3,3,Arith_Subtraction,21.9,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Madhya Pradesh,Grade 5,5,Arith_Division,16.4,Government,ASER 2018 State Findings,Critical,No,NA
+2022,Madhya Pradesh,Grade 3,3,Reading_AtLevel,14.8,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Madhya Pradesh,Grade 4,4,Reading_AtLevel,24.1,Government,ASER 2022 State Findings (Gr4 interpolated),Critical,Yes,NA
+2022,Madhya Pradesh,Grade 5,5,Reading_AtLevel,33.4,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Madhya Pradesh,Grade 3,3,Arith_Subtraction,20.1,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Madhya Pradesh,Grade 5,5,Arith_Division,18.0,Government,ASER 2022 State Findings,Critical,Yes,NA
+2024,Madhya Pradesh,Grade 3,3,Reading_AtLevel,19.7,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Madhya Pradesh,Grade 4,4,Reading_AtLevel,28.0,Government,ASER 2024 State Findings (Gr4 interpolated),Critical,No,NA
+2024,Madhya Pradesh,Grade 5,5,Reading_AtLevel,36.4,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Madhya Pradesh,Grade 3,3,Arith_Subtraction,26.1,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Madhya Pradesh,Grade 5,5,Arith_Division,20.5,Government,ASER 2024 State Findings,Critical,No,NA
+2018,Jharkhand,Grade 3,3,Reading_AtLevel,14.6,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Jharkhand,Grade 4,4,Reading_AtLevel,23.9,Government,ASER 2018 State Findings (Gr4 interpolated),Critical,No,NA
+2018,Jharkhand,Grade 5,5,Reading_AtLevel,33.2,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Jharkhand,Grade 3,3,Arith_Subtraction,23.4,Government,ASER 2018 State Findings,Critical,No,NA
+2018,Jharkhand,Grade 5,5,Arith_Division,17.4,Government,ASER 2018 State Findings,Critical,No,NA
+2022,Jharkhand,Grade 3,3,Reading_AtLevel,15.1,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Jharkhand,Grade 4,4,Reading_AtLevel,23.9,Government,ASER 2022 State Findings (Gr4 interpolated),Critical,Yes,NA
+2022,Jharkhand,Grade 5,5,Reading_AtLevel,32.8,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Jharkhand,Grade 3,3,Arith_Subtraction,21.4,Government,ASER 2022 State Findings,Critical,Yes,NA
+2022,Jharkhand,Grade 5,5,Arith_Division,19.2,Government,ASER 2022 State Findings,Critical,Yes,NA
+2024,Jharkhand,Grade 3,3,Reading_AtLevel,22.4,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Jharkhand,Grade 4,4,Reading_AtLevel,29.8,Government,ASER 2024 State Findings (Gr4 interpolated),Critical,No,NA
+2024,Jharkhand,Grade 5,5,Reading_AtLevel,37.1,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Jharkhand,Grade 3,3,Arith_Subtraction,27.8,Government,ASER 2024 State Findings,Critical,No,NA
+2024,Jharkhand,Grade 5,5,Arith_Division,21.8,Government,ASER 2024 State Findings,Critical,No,NA
+2018,Chhattisgarh,Grade 3,3,Reading_AtLevel,18.2,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Chhattisgarh,Grade 4,4,Reading_AtLevel,27.9,Government,ASER 2018 State Findings (Gr4 interpolated),High Risk,No,NA
+2018,Chhattisgarh,Grade 5,5,Reading_AtLevel,37.5,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Chhattisgarh,Grade 3,3,Arith_Subtraction,25.5,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Chhattisgarh,Grade 5,5,Arith_Division,19.4,Government,ASER 2018 State Findings,High Risk,No,NA
+2022,Chhattisgarh,Grade 3,3,Reading_AtLevel,16.9,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Chhattisgarh,Grade 4,4,Reading_AtLevel,26.0,Government,ASER 2022 State Findings (Gr4 interpolated),High Risk,Yes,NA
+2022,Chhattisgarh,Grade 5,5,Reading_AtLevel,35.1,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Chhattisgarh,Grade 3,3,Arith_Subtraction,23.4,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Chhattisgarh,Grade 5,5,Arith_Division,21.4,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2024,Chhattisgarh,Grade 3,3,Reading_AtLevel,23.1,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Chhattisgarh,Grade 4,4,Reading_AtLevel,31.7,Government,ASER 2024 State Findings (Gr4 interpolated),High Risk,No,NA
+2024,Chhattisgarh,Grade 5,5,Reading_AtLevel,40.2,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Chhattisgarh,Grade 3,3,Arith_Subtraction,30.4,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Chhattisgarh,Grade 5,5,Arith_Division,24.3,Government,ASER 2024 State Findings,High Risk,No,NA
+2018,Odisha,Grade 3,3,Reading_AtLevel,22.3,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Odisha,Grade 4,4,Reading_AtLevel,32.2,Government,ASER 2018 State Findings (Gr4 interpolated),High Risk,No,NA
+2018,Odisha,Grade 5,5,Reading_AtLevel,42.1,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Odisha,Grade 3,3,Arith_Subtraction,27.8,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Odisha,Grade 5,5,Arith_Division,21.8,Government,ASER 2018 State Findings,High Risk,No,NA
+2022,Odisha,Grade 3,3,Reading_AtLevel,20.8,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Odisha,Grade 4,4,Reading_AtLevel,30.5,Government,ASER 2022 State Findings (Gr4 interpolated),High Risk,Yes,NA
+2022,Odisha,Grade 5,5,Reading_AtLevel,40.2,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Odisha,Grade 3,3,Arith_Subtraction,25.5,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Odisha,Grade 5,5,Arith_Division,23.9,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2024,Odisha,Grade 3,3,Reading_AtLevel,26.4,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Odisha,Grade 4,4,Reading_AtLevel,35.6,Government,ASER 2024 State Findings (Gr4 interpolated),High Risk,No,NA
+2024,Odisha,Grade 5,5,Reading_AtLevel,44.8,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Odisha,Grade 3,3,Arith_Subtraction,33.1,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Odisha,Grade 5,5,Arith_Division,27.2,Government,ASER 2024 State Findings,High Risk,No,NA
+2018,Assam,Grade 3,3,Reading_AtLevel,20.1,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Assam,Grade 4,4,Reading_AtLevel,29.2,Government,ASER 2018 State Findings (Gr4 interpolated),High Risk,No,NA
+2018,Assam,Grade 5,5,Reading_AtLevel,38.4,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Assam,Grade 3,3,Arith_Subtraction,26.7,Government,ASER 2018 State Findings,High Risk,No,NA
+2018,Assam,Grade 5,5,Arith_Division,20.6,Government,ASER 2018 State Findings,High Risk,No,NA
+2022,Assam,Grade 3,3,Reading_AtLevel,18.7,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Assam,Grade 4,4,Reading_AtLevel,28.1,Government,ASER 2022 State Findings (Gr4 interpolated),High Risk,Yes,NA
+2022,Assam,Grade 5,5,Reading_AtLevel,37.6,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Assam,Grade 3,3,Arith_Subtraction,24.5,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2022,Assam,Grade 5,5,Arith_Division,22.6,Government,ASER 2022 State Findings,High Risk,Yes,NA
+2024,Assam,Grade 3,3,Reading_AtLevel,24.8,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Assam,Grade 4,4,Reading_AtLevel,33.0,Government,ASER 2024 State Findings (Gr4 interpolated),High Risk,No,NA
+2024,Assam,Grade 5,5,Reading_AtLevel,41.3,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Assam,Grade 3,3,Arith_Subtraction,31.8,Government,ASER 2024 State Findings,High Risk,No,NA
+2024,Assam,Grade 5,5,Arith_Division,25.7,Government,ASER 2024 State Findings,High Risk,No,NA
+2018,West Bengal,Grade 3,3,Reading_AtLevel,26.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,West Bengal,Grade 4,4,Reading_AtLevel,37.3,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,West Bengal,Grade 5,5,Reading_AtLevel,48.3,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,West Bengal,Grade 3,3,Arith_Subtraction,30.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,West Bengal,Grade 5,5,Arith_Division,24.6,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,West Bengal,Grade 3,3,Reading_AtLevel,24.2,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,West Bengal,Grade 4,4,Reading_AtLevel,34.1,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,West Bengal,Grade 5,5,Reading_AtLevel,44.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,West Bengal,Grade 3,3,Arith_Subtraction,27.9,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,West Bengal,Grade 5,5,Arith_Division,27.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,West Bengal,Grade 3,3,Reading_AtLevel,29.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,West Bengal,Grade 4,4,Reading_AtLevel,38.2,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,West Bengal,Grade 5,5,Reading_AtLevel,47.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,West Bengal,Grade 3,3,Arith_Subtraction,36.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,West Bengal,Grade 5,5,Arith_Division,30.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Maharashtra,Grade 3,3,Reading_AtLevel,34.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Maharashtra,Grade 4,4,Reading_AtLevel,46.3,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Maharashtra,Grade 5,5,Reading_AtLevel,58.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Maharashtra,Grade 3,3,Arith_Subtraction,37.5,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Maharashtra,Grade 5,5,Arith_Division,30.7,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Maharashtra,Grade 3,3,Reading_AtLevel,30.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Maharashtra,Grade 4,4,Reading_AtLevel,41.2,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Maharashtra,Grade 5,5,Reading_AtLevel,52.3,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Maharashtra,Grade 3,3,Arith_Subtraction,34.3,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Maharashtra,Grade 5,5,Arith_Division,33.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Maharashtra,Grade 3,3,Reading_AtLevel,38.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Maharashtra,Grade 4,4,Reading_AtLevel,47.6,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Maharashtra,Grade 5,5,Reading_AtLevel,56.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Maharashtra,Grade 3,3,Arith_Subtraction,44.6,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Maharashtra,Grade 5,5,Arith_Division,38.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Karnataka,Grade 3,3,Reading_AtLevel,38.1,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Karnataka,Grade 4,4,Reading_AtLevel,49.2,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Karnataka,Grade 5,5,Reading_AtLevel,60.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Karnataka,Grade 3,3,Arith_Subtraction,40.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Karnataka,Grade 5,5,Arith_Division,32.1,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Karnataka,Grade 3,3,Reading_AtLevel,33.4,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Karnataka,Grade 4,4,Reading_AtLevel,44.1,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Karnataka,Grade 5,5,Reading_AtLevel,54.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Karnataka,Grade 3,3,Arith_Subtraction,36.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Karnataka,Grade 5,5,Arith_Division,35.3,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Karnataka,Grade 3,3,Reading_AtLevel,41.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Karnataka,Grade 4,4,Reading_AtLevel,49.8,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Karnataka,Grade 5,5,Reading_AtLevel,58.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Karnataka,Grade 3,3,Arith_Subtraction,47.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Karnataka,Grade 5,5,Arith_Division,40.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Andhra Pradesh,Grade 3,3,Reading_AtLevel,36.8,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Andhra Pradesh,Grade 4,4,Reading_AtLevel,47.5,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Andhra Pradesh,Grade 5,5,Reading_AtLevel,58.1,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Andhra Pradesh,Grade 3,3,Arith_Subtraction,38.0,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Andhra Pradesh,Grade 5,5,Arith_Division,30.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Andhra Pradesh,Grade 3,3,Reading_AtLevel,31.2,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Andhra Pradesh,Grade 4,4,Reading_AtLevel,41.9,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Andhra Pradesh,Grade 5,5,Reading_AtLevel,52.6,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Andhra Pradesh,Grade 3,3,Arith_Subtraction,34.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Andhra Pradesh,Grade 5,5,Arith_Division,33.3,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Andhra Pradesh,Grade 3,3,Reading_AtLevel,39.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Andhra Pradesh,Grade 4,4,Reading_AtLevel,47.4,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Andhra Pradesh,Grade 5,5,Reading_AtLevel,55.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Andhra Pradesh,Grade 3,3,Arith_Subtraction,45.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Andhra Pradesh,Grade 5,5,Arith_Division,37.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Telangana,Grade 3,3,Reading_AtLevel,38.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Telangana,Grade 4,4,Reading_AtLevel,49.4,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Telangana,Grade 5,5,Reading_AtLevel,60.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Telangana,Grade 3,3,Arith_Subtraction,39.3,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Telangana,Grade 5,5,Arith_Division,31.1,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Telangana,Grade 3,3,Reading_AtLevel,34.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Telangana,Grade 4,4,Reading_AtLevel,44.7,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Telangana,Grade 5,5,Reading_AtLevel,55.2,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Telangana,Grade 3,3,Arith_Subtraction,36.0,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Telangana,Grade 5,5,Arith_Division,34.2,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Telangana,Grade 3,3,Reading_AtLevel,40.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Telangana,Grade 4,4,Reading_AtLevel,48.6,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Telangana,Grade 5,5,Reading_AtLevel,57.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Telangana,Grade 3,3,Arith_Subtraction,46.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Telangana,Grade 5,5,Arith_Division,38.9,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Tamil Nadu,Grade 3,3,Reading_AtLevel,44.8,Government,ASER 2018 State Findings,Good,No,NA
+2018,Tamil Nadu,Grade 4,4,Reading_AtLevel,55.5,Government,ASER 2018 State Findings (Gr4 interpolated),Good,No,NA
+2018,Tamil Nadu,Grade 5,5,Reading_AtLevel,66.3,Government,ASER 2018 State Findings,Good,No,NA
+2018,Tamil Nadu,Grade 3,3,Arith_Subtraction,44.0,Government,ASER 2018 State Findings,Good,No,NA
+2018,Tamil Nadu,Grade 5,5,Arith_Division,37.0,Government,ASER 2018 State Findings,Good,No,NA
+2022,Tamil Nadu,Grade 3,3,Reading_AtLevel,40.2,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Tamil Nadu,Grade 4,4,Reading_AtLevel,50.5,Government,ASER 2022 State Findings (Gr4 interpolated),Good,Yes,NA
+2022,Tamil Nadu,Grade 5,5,Reading_AtLevel,60.8,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Tamil Nadu,Grade 3,3,Arith_Subtraction,40.3,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Tamil Nadu,Grade 5,5,Arith_Division,40.7,Government,ASER 2022 State Findings,Good,Yes,NA
+2024,Tamil Nadu,Grade 3,3,Reading_AtLevel,46.8,Government,ASER 2024 State Findings,Good,No,NA
+2024,Tamil Nadu,Grade 4,4,Reading_AtLevel,55.5,Government,ASER 2024 State Findings (Gr4 interpolated),Good,No,NA
+2024,Tamil Nadu,Grade 5,5,Reading_AtLevel,64.2,Government,ASER 2024 State Findings,Good,No,NA
+2024,Tamil Nadu,Grade 3,3,Arith_Subtraction,52.4,Government,ASER 2024 State Findings,Good,No,NA
+2024,Tamil Nadu,Grade 5,5,Arith_Division,46.3,Government,ASER 2024 State Findings,Good,No,NA
+2018,Kerala,Grade 3,3,Reading_AtLevel,52.1,Government,ASER 2018 State Findings,Good,No,NA
+2018,Kerala,Grade 4,4,Reading_AtLevel,63.5,Government,ASER 2018 State Findings (Gr4 interpolated),Good,No,NA
+2018,Kerala,Grade 5,5,Reading_AtLevel,74.8,Government,ASER 2018 State Findings,Good,No,NA
+2018,Kerala,Grade 3,3,Arith_Subtraction,48.8,Government,ASER 2018 State Findings,Good,No,NA
+2018,Kerala,Grade 5,5,Arith_Division,49.9,Government,ASER 2018 State Findings,Good,No,NA
+2022,Kerala,Grade 3,3,Reading_AtLevel,48.4,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Kerala,Grade 4,4,Reading_AtLevel,59.3,Government,ASER 2022 State Findings (Gr4 interpolated),Good,Yes,NA
+2022,Kerala,Grade 5,5,Reading_AtLevel,70.2,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Kerala,Grade 3,3,Arith_Subtraction,44.7,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Kerala,Grade 5,5,Arith_Division,54.9,Government,ASER 2022 State Findings,Good,Yes,NA
+2024,Kerala,Grade 3,3,Reading_AtLevel,55.2,Government,ASER 2024 State Findings,Good,No,NA
+2024,Kerala,Grade 4,4,Reading_AtLevel,66.8,Government,ASER 2024 State Findings (Gr4 interpolated),Good,No,NA
+2024,Kerala,Grade 5,5,Reading_AtLevel,78.4,Government,ASER 2024 State Findings,Good,No,NA
+2024,Kerala,Grade 3,3,Arith_Subtraction,58.1,Government,ASER 2024 State Findings,Good,No,NA
+2024,Kerala,Grade 5,5,Arith_Division,62.4,Government,ASER 2024 State Findings,Good,No,NA
+2018,Gujarat,Grade 3,3,Reading_AtLevel,28.3,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Gujarat,Grade 4,4,Reading_AtLevel,41.8,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Gujarat,Grade 5,5,Reading_AtLevel,55.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Gujarat,Grade 3,3,Arith_Subtraction,34.6,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Gujarat,Grade 5,5,Arith_Division,31.8,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Gujarat,Grade 3,3,Reading_AtLevel,26.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Gujarat,Grade 4,4,Reading_AtLevel,38.8,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Gujarat,Grade 5,5,Reading_AtLevel,50.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Gujarat,Grade 3,3,Arith_Subtraction,31.7,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Gujarat,Grade 5,5,Arith_Division,35.0,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Gujarat,Grade 3,3,Reading_AtLevel,32.5,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Gujarat,Grade 4,4,Reading_AtLevel,45.6,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Gujarat,Grade 5,5,Reading_AtLevel,58.7,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Gujarat,Grade 3,3,Arith_Subtraction,41.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Gujarat,Grade 5,5,Arith_Division,39.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Haryana,Grade 3,3,Reading_AtLevel,29.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Haryana,Grade 4,4,Reading_AtLevel,40.9,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Haryana,Grade 5,5,Reading_AtLevel,52.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Haryana,Grade 3,3,Arith_Subtraction,33.9,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Haryana,Grade 5,5,Arith_Division,28.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Haryana,Grade 3,3,Reading_AtLevel,27.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Haryana,Grade 4,4,Reading_AtLevel,37.9,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Haryana,Grade 5,5,Reading_AtLevel,48.6,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Haryana,Grade 3,3,Arith_Subtraction,31.0,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Haryana,Grade 5,5,Arith_Division,31.0,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Haryana,Grade 3,3,Reading_AtLevel,33.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Haryana,Grade 4,4,Reading_AtLevel,44.0,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Haryana,Grade 5,5,Reading_AtLevel,54.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Haryana,Grade 3,3,Arith_Subtraction,40.3,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Haryana,Grade 5,5,Arith_Division,35.2,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Punjab,Grade 3,3,Reading_AtLevel,31.2,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Punjab,Grade 4,4,Reading_AtLevel,43.0,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Punjab,Grade 5,5,Reading_AtLevel,54.8,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Punjab,Grade 3,3,Arith_Subtraction,35.4,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Punjab,Grade 5,5,Arith_Division,29.1,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Punjab,Grade 3,3,Reading_AtLevel,28.4,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Punjab,Grade 4,4,Reading_AtLevel,38.8,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Punjab,Grade 5,5,Reading_AtLevel,49.2,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Punjab,Grade 3,3,Arith_Subtraction,32.4,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Punjab,Grade 5,5,Arith_Division,32.0,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Punjab,Grade 3,3,Reading_AtLevel,34.6,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Punjab,Grade 4,4,Reading_AtLevel,44.2,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Punjab,Grade 5,5,Reading_AtLevel,53.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Punjab,Grade 3,3,Arith_Subtraction,42.1,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Punjab,Grade 5,5,Arith_Division,36.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2018,Himachal Pradesh,Grade 3,3,Reading_AtLevel,38.4,Government,ASER 2018 State Findings,Good,No,NA
+2018,Himachal Pradesh,Grade 4,4,Reading_AtLevel,50.6,Government,ASER 2018 State Findings (Gr4 interpolated),Good,No,NA
+2018,Himachal Pradesh,Grade 5,5,Reading_AtLevel,62.8,Government,ASER 2018 State Findings,Good,No,NA
+2018,Himachal Pradesh,Grade 3,3,Arith_Subtraction,41.3,Government,ASER 2018 State Findings,Good,No,NA
+2018,Himachal Pradesh,Grade 5,5,Arith_Division,35.0,Government,ASER 2018 State Findings,Good,No,NA
+2022,Himachal Pradesh,Grade 3,3,Reading_AtLevel,35.2,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Himachal Pradesh,Grade 4,4,Reading_AtLevel,46.8,Government,ASER 2022 State Findings (Gr4 interpolated),Good,Yes,NA
+2022,Himachal Pradesh,Grade 5,5,Reading_AtLevel,58.4,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Himachal Pradesh,Grade 3,3,Arith_Subtraction,37.9,Government,ASER 2022 State Findings,Good,Yes,NA
+2022,Himachal Pradesh,Grade 5,5,Arith_Division,38.5,Government,ASER 2022 State Findings,Good,Yes,NA
+2024,Himachal Pradesh,Grade 3,3,Reading_AtLevel,42.1,Government,ASER 2024 State Findings,Good,No,NA
+2024,Himachal Pradesh,Grade 4,4,Reading_AtLevel,53.2,Government,ASER 2024 State Findings (Gr4 interpolated),Good,No,NA
+2024,Himachal Pradesh,Grade 5,5,Reading_AtLevel,64.3,Government,ASER 2024 State Findings,Good,No,NA
+2024,Himachal Pradesh,Grade 3,3,Arith_Subtraction,49.2,Government,ASER 2024 State Findings,Good,No,NA
+2024,Himachal Pradesh,Grade 5,5,Arith_Division,43.8,Government,ASER 2024 State Findings,Good,No,NA
+2018,Uttarakhand,Grade 3,3,Reading_AtLevel,24.7,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Uttarakhand,Grade 4,4,Reading_AtLevel,36.6,Government,ASER 2018 State Findings (Gr4 interpolated),Moderate,No,NA
+2018,Uttarakhand,Grade 5,5,Reading_AtLevel,48.6,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Uttarakhand,Grade 3,3,Arith_Subtraction,34.3,Government,ASER 2018 State Findings,Moderate,No,NA
+2018,Uttarakhand,Grade 5,5,Arith_Division,26.5,Government,ASER 2018 State Findings,Moderate,No,NA
+2022,Uttarakhand,Grade 3,3,Reading_AtLevel,22.4,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Uttarakhand,Grade 4,4,Reading_AtLevel,34.1,Government,ASER 2022 State Findings (Gr4 interpolated),Moderate,Yes,NA
+2022,Uttarakhand,Grade 5,5,Reading_AtLevel,45.8,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Uttarakhand,Grade 3,3,Arith_Subtraction,31.4,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2022,Uttarakhand,Grade 5,5,Arith_Division,29.1,Government,ASER 2022 State Findings,Moderate,Yes,NA
+2024,Uttarakhand,Grade 3,3,Reading_AtLevel,35.6,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Uttarakhand,Grade 4,4,Reading_AtLevel,44.0,Government,ASER 2024 State Findings (Gr4 interpolated),Moderate,No,NA
+2024,Uttarakhand,Grade 5,5,Reading_AtLevel,52.4,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Uttarakhand,Grade 3,3,Arith_Subtraction,40.8,Government,ASER 2024 State Findings,Moderate,No,NA
+2024,Uttarakhand,Grade 5,5,Arith_Division,33.1,Government,ASER 2024 State Findings,Moderate,No,NA

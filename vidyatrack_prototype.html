@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VidyaTrack — District Education Intelligence Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0D1117;
+    --paper: #F7F4EF;
+    --cream: #EDE8DF;
+    --saffron: #E8612C;
+    --saffron-light: #F5956B;
+    --indigo: #1E3A5F;
+    --indigo-mid: #2A5298;
+    --teal: #0E7C7B;
+    --teal-light: #3DB0AF;
+    --amber: #F0A500;
+    --amber-light: #FFD166;
+    --danger: #C1292E;
+    --success: #2D6A4F;
+    --mid: #687B8E;
+    --border: rgba(13,17,23,0.1);
+    --shadow: 0 2px 20px rgba(13,17,23,0.08);
+    --shadow-lg: 0 8px 40px rgba(13,17,23,0.14);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--indigo);
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  }
+  .nav-brand {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .brand-icon {
+    width: 32px; height: 32px;
+    background: var(--saffron);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; color: white; font-size: 14px;
+  }
+  .brand-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: 18px;
+    color: white; letter-spacing: -0.3px;
+  }
+  .brand-name span { color: var(--amber-light); }
+  .nav-subtitle { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 1px; }
+  .nav-right {
+    display: flex; align-items: center; gap: 16px;
+  }
+  .nav-tag {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.8);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .nav-user {
+    width: 34px; height: 34px;
+    background: var(--saffron);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 700; font-size: 13px;
+    cursor: pointer;
+  }
+
+  /* ── TABS ── */
+  .tab-bar {
+    background: var(--indigo);
+    padding: 0 28px;
+    display: flex; gap: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .tab-btn {
+    padding: 10px 18px;
+    border: none; background: none;
+    color: rgba(255,255,255,0.55);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .tab-btn:hover { color: rgba(255,255,255,0.85); }
+  .tab-btn.active {
+    color: var(--amber-light);
+    border-bottom-color: var(--amber-light);
+  }
+  .tab-dot {
+    width: 6px; height: 6px;
+    background: var(--saffron);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* ── LAYOUT ── */
+  .main { padding: 24px 28px; max-width: 1400px; margin: 0 auto; }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: flex; align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px; gap: 16px;
+  }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px; font-weight: 700;
+    color: var(--indigo); line-height: 1.2;
+  }
+  .section-sub { font-size: 13px; color: var(--mid); margin-top: 3px; }
+
+  /* ── FILTERS ── */
+  .filter-bar {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow);
+  }
+  .filter-label { font-size: 12px; font-weight: 600; color: var(--mid); text-transform: uppercase; letter-spacing: 0.5px; }
+  .filter-group { display: flex; align-items: center; gap: 8px; }
+  select, .filter-select {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 28px 7px 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23687B8E'/%3E%3C/svg%3E") no-repeat right 10px center;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  select:focus { outline: none; border-color: var(--indigo-mid); }
+  .filter-divider { width: 1px; height: 24px; background: var(--border); }
+
+  /* ── KPI CARDS ── */
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+  .kpi-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .kpi-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .kpi-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%;
+  }
+  .kpi-card.saffron::before { background: var(--saffron); }
+  .kpi-card.indigo::before { background: var(--indigo-mid); }
+  .kpi-card.teal::before { background: var(--teal); }
+  .kpi-card.amber::before { background: var(--amber); }
+  .kpi-label { font-size: 11px; font-weight: 600; color: var(--mid); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .kpi-value { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 700; line-height: 1; }
+  .kpi-value.good { color: var(--success); }
+  .kpi-value.warn { color: var(--amber); }
+  .kpi-value.bad { color: var(--danger); }
+  .kpi-value.neutral { color: var(--indigo); }
+  .kpi-change {
+    font-size: 12px; font-weight: 500; margin-top: 4px;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .kpi-change.up { color: var(--success); }
+  .kpi-change.down { color: var(--danger); }
+  .kpi-change.flat { color: var(--mid); }
+  .kpi-context { font-size: 11px; color: var(--mid); margin-top: 2px; }
+
+  /* ── GRID ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+  .card-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .card-title { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--indigo); }
+  .card-sub { font-size: 12px; color: var(--mid); margin-top: 2px; }
+  .card-badge {
+    font-size: 11px; font-weight: 600;
+    padding: 3px 8px; border-radius: 20px;
+  }
+  .badge-danger { background: #FEE2E2; color: var(--danger); }
+  .badge-warn { background: #FEF3C7; color: #92400E; }
+  .badge-good { background: #D1FAE5; color: var(--success); }
+  .badge-info { background: #DBEAFE; color: #1E40AF; }
+
+  /* ── HEAT MAP ── */
+  .heatmap-grid {
+    display: grid;
+    gap: 4px;
+  }
+  .hm-row { display: flex; gap: 4px; align-items: center; }
+  .hm-label { font-size: 11px; color: var(--mid); width: 120px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; }
+  .hm-cell {
+    flex: 1; height: 26px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 600; color: white;
+    cursor: pointer;
+    transition: transform 0.15s, filter 0.15s;
+    position: relative;
+  }
+  .hm-cell:hover { transform: scale(1.08); filter: brightness(1.1); z-index: 5; }
+  .hm-header { display: flex; gap: 4px; margin-left: 124px; margin-bottom: 4px; }
+  .hm-yr { flex: 1; text-align: center; font-size: 10px; font-weight: 700; color: var(--mid); }
+
+  /* ── BAR CHART ── */
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: flex; align-items: center; gap: 10px; }
+  .bar-label { font-size: 12px; color: var(--ink); width: 130px; flex-shrink: 0; font-weight: 500; }
+  .bar-track { flex: 1; height: 22px; background: var(--cream); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill {
+    height: 100%; border-radius: 4px;
+    display: flex; align-items: center; padding-left: 8px;
+    font-size: 11px; font-weight: 700; color: white;
+    transition: width 0.8s cubic-bezier(0.16,1,0.3,1);
+    min-width: 32px;
+  }
+  .bar-val { font-size: 12px; font-weight: 700; color: var(--ink); width: 38px; text-align: right; }
+
+  /* ── TREND LINE (SVG) ── */
+  .trend-svg { width: 100%; overflow: visible; }
+
+  /* ── PRIORITY QUEUE ── */
+  .pq-list { display: flex; flex-direction: column; gap: 8px; }
+  .pq-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .pq-item:hover { border-color: var(--indigo-mid); background: white; box-shadow: var(--shadow); }
+  .pq-rank {
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 13px; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .pq-rank.p1 { background: #FEE2E2; color: var(--danger); }
+  .pq-rank.p2 { background: #FEF3C7; color: #B45309; }
+  .pq-rank.p3 { background: #DBEAFE; color: #1E40AF; }
+  .pq-body { flex: 1; }
+  .pq-name { font-weight: 600; font-size: 13px; color: var(--ink); }
+  .pq-meta { font-size: 11px; color: var(--mid); margin-top: 2px; }
+  .pq-scores { display: flex; gap: 8px; }
+  .pq-score {
+    font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 20px;
+  }
+  .score-read { background: #EDE9FE; color: #5B21B6; }
+  .score-math { background: #DBEAFE; color: #1E40AF; }
+  .pq-action {
+    font-size: 11px; color: var(--indigo-mid);
+    font-weight: 600; cursor: pointer;
+    padding: 5px 10px; border-radius: 6px;
+    border: 1px solid var(--indigo-mid);
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .pq-action:hover { background: var(--indigo-mid); color: white; }
+
+  /* ── INTERVENTION TRACKER ── */
+  .tracker-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .tracker-item:last-child { border-bottom: none; }
+  .tracker-status {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+  .status-active { background: var(--teal); }
+  .status-pending { background: var(--amber); }
+  .status-done { background: var(--success); }
+  .tracker-info { flex: 1; }
+  .tracker-name { font-size: 13px; font-weight: 500; }
+  .tracker-detail { font-size: 11px; color: var(--mid); }
+  .tracker-delta {
+    font-size: 12px; font-weight: 700;
+  }
+  .delta-pos { color: var(--success); }
+  .delta-neg { color: var(--danger); }
+  .delta-nil { color: var(--mid); }
+
+  /* ── INSIGHT CALLOUTS ── */
+  .insight-box {
+    background: var(--indigo);
+    color: white;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    position: relative; overflow: hidden;
+  }
+  .insight-box::after {
+    content: '💡';
+    position: absolute; right: 14px; top: 14px;
+    font-size: 20px; opacity: 0.4;
+  }
+  .insight-box .ib-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--amber-light); margin-bottom: 4px; }
+  .insight-box .ib-text { font-size: 13px; line-height: 1.5; }
+  .insight-box .ib-data { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; color: var(--saffron-light); margin-top: 6px; }
+
+  /* ── LEVEL STACKED BAR ── */
+  .stacked-bar { display: flex; height: 32px; border-radius: 6px; overflow: hidden; gap: 1px; }
+  .sb-seg {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 9px; font-weight: 700; color: white;
+    transition: flex 0.6s cubic-bezier(0.16,1,0.3,1);
+    cursor: default;
+    position: relative;
+  }
+  .sb-seg:hover::after {
+    content: attr(data-tip);
+    position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+    background: var(--ink); color: white;
+    padding: 4px 8px; border-radius: 4px;
+    font-size: 10px; white-space: nowrap; z-index: 10;
+  }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(13,17,23,0.5);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    width: 520px;
+    max-width: calc(100vw - 40px);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    animation: modalIn 0.25s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to { opacity: 1; transform: none; }
+  }
+  .modal-close {
+    position: absolute; top: 16px; right: 16px;
+    width: 28px; height: 28px;
+    border-radius: 50%; border: 1px solid var(--border);
+    background: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: var(--mid);
+    transition: background 0.15s;
+  }
+  .modal-close:hover { background: var(--cream); }
+  .modal-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--indigo); margin-bottom: 4px; }
+  .modal-sub { font-size: 13px; color: var(--mid); margin-bottom: 20px; }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  .modal-stat { background: var(--paper); border-radius: 10px; padding: 14px; text-align: center; }
+  .modal-stat-val { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 700; }
+  .modal-stat-label { font-size: 11px; color: var(--mid); margin-top: 2px; }
+  .modal-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .btn-primary {
+    background: var(--indigo);
+    color: white; border: none;
+    padding: 9px 16px; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--indigo-mid); }
+  .btn-secondary {
+    background: none;
+    color: var(--indigo); border: 1px solid var(--border);
+    padding: 9px 16px; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--cream); }
+
+  /* ── TABS CONTENT ── */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── LEGEND ── */
+  .legend { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--mid); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+  /* ── TOAST ── */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--indigo);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 13px; font-weight: 500;
+    box-shadow: var(--shadow-lg);
+    z-index: 300;
+    transform: translateY(80px);
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+  .toast.show { transform: translateY(0); }
+
+  .full-width { grid-column: 1 / -1; }
+  .mt-16 { margin-top: 16px; }
+
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: 1fr 1fr; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="brand-icon">VT</div>
+    <div>
+      <div class="brand-name">Vidya<span>Track</span></div>
+      <div class="nav-subtitle">District Education Intelligence Platform</div>
+    </div>
+  </div>
+  <div class="nav-right">
+    <span class="nav-tag">Bihar · Gaya District</span>
+    <span class="nav-tag">DEO Dashboard</span>
+    <div class="nav-user" title="District Education Officer">RK</div>
+  </div>
+</nav>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('overview')">
+    <span class="tab-dot"></span> Overview
+  </button>
+  <button class="tab-btn" onclick="switchTab('heatmap')">School Risk Map</button>
+  <button class="tab-btn" onclick="switchTab('priority')">Priority Queue</button>
+  <button class="tab-btn" onclick="switchTab('tracker')">Intervention Tracker</button>
+  <button class="tab-btn" onclick="switchTab('trends')">State Trends</button>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- FILTERS -->
+  <div class="filter-bar">
+    <span class="filter-label">Filters</span>
+    <div class="filter-group">
+      <label class="filter-label" for="f-year">Year</label>
+      <select id="f-year" onchange="updateDashboard()">
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2019">2019</option>
+      </select>
+    </div>
+    <div class="filter-divider"></div>
+    <div class="filter-group">
+      <label class="filter-label" for="f-grade">Grade</label>
+      <select id="f-grade" onchange="updateDashboard()">
+        <option value="5">Grade 5</option>
+        <option value="3">Grade 3</option>
+        <option value="8">Grade 8</option>
+      </select>
+    </div>
+    <div class="filter-divider"></div>
+    <div class="filter-group">
+      <label class="filter-label" for="f-metric">Metric</label>
+      <select id="f-metric" onchange="updateDashboard()">
+        <option value="read">Reading (Story Level %)</option>
+        <option value="math">Arithmetic (Division %)</option>
+      </select>
+    </div>
+    <div class="filter-divider"></div>
+    <div class="filter-group">
+      <label class="filter-label" for="f-school">School Type</label>
+      <select id="f-school" onchange="updateDashboard()">
+        <option value="all">All Schools</option>
+        <option value="govt">Government</option>
+        <option value="private">Private</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- ── TAB: OVERVIEW ── -->
+  <div id="tab-overview" class="tab-panel active">
+
+    <div class="section-header">
+      <div>
+        <div class="section-title">District Learning Dashboard · Gaya, Bihar</div>
+        <div class="section-sub">ASER 2024 Data · Last refreshed: Jan 2025 · 847 schools monitored</div>
+      </div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-row" id="kpi-row">
+      <div class="kpi-card saffron">
+        <div class="kpi-label">Story Reading % (Gr.5)</div>
+        <div class="kpi-value bad" id="kpi-read">33.0%</div>
+        <div class="kpi-change up" id="kpi-read-chg">↑ +2.1pp vs 2023</div>
+        <div class="kpi-context">National avg: 50.1%</div>
+      </div>
+      <div class="kpi-card indigo">
+        <div class="kpi-label">Division % (Gr.5)</div>
+        <div class="kpi-value bad" id="kpi-math">16.8%</div>
+        <div class="kpi-change up" id="kpi-math-chg">↑ +1.6pp vs 2023</div>
+        <div class="kpi-context">National avg: 30.5%</div>
+      </div>
+      <div class="kpi-card teal">
+        <div class="kpi-label">Schools at Risk</div>
+        <div class="kpi-value bad" id="kpi-risk">247</div>
+        <div class="kpi-change down" id="kpi-risk-chg">↓ 29.2% of all schools</div>
+        <div class="kpi-context">Priority 1: 89 schools</div>
+      </div>
+      <div class="kpi-card amber">
+        <div class="kpi-label">Active Interventions</div>
+        <div class="kpi-value neutral" id="kpi-int">34</div>
+        <div class="kpi-change flat">14 pending review</div>
+        <div class="kpi-context">Avg impact: +3.2pp / cycle</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <!-- Reading Level Distribution -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Reading Level Distribution — Grade 5</div>
+            <div class="card-sub">Bihar · Government Schools · 2024</div>
+          </div>
+          <span class="card-badge badge-danger">Crisis Band: 37%</span>
+        </div>
+        <div style="margin-bottom:14px">
+          <div style="font-size:11px;color:var(--mid);margin-bottom:6px">% students at each level (stacked)</div>
+          <div class="stacked-bar" id="stacked-read">
+            <div class="sb-seg" style="flex:6.8;background:#C1292E" data-tip="Cannot Read: 6.8%">6.8</div>
+            <div class="sb-seg" style="flex:12.2;background:#E8612C" data-tip="Letters: 12.2%">12.2</div>
+            <div class="sb-seg" style="flex:15.6;background:#F0A500" data-tip="Words: 15.6%">15.6</div>
+            <div class="sb-seg" style="flex:15.3;background:#2A5298" data-tip="Paragraph: 15.3%">15.3</div>
+            <div class="sb-seg" style="flex:50.1;background:#2D6A4F" data-tip="Story: 50.1%">50.1</div>
+          </div>
+          <div class="legend mt-16">
+            <div class="legend-item"><div class="legend-dot" style="background:#C1292E"></div>Cannot Read</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#E8612C"></div>Letters</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#F0A500"></div>Words</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#2A5298"></div>Paragraph</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#2D6A4F"></div>Story</div>
+          </div>
+        </div>
+        <div class="insight-box">
+          <div class="ib-label">Key Insight</div>
+          <div class="ib-text">37% of Grade 5 students in Bihar cannot read beyond Letter level — 3 years behind curriculum expectations.</div>
+          <div class="ib-data">37% in crisis band</div>
+        </div>
+      </div>
+
+      <!-- Arithmetic Level Distribution -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Arithmetic Level Distribution — Grade 5</div>
+            <div class="card-sub">All India · Government Schools · 2024</div>
+          </div>
+          <span class="card-badge badge-warn">Division Gap: 24pp</span>
+        </div>
+        <div style="margin-bottom:14px">
+          <div style="font-size:11px;color:var(--mid);margin-bottom:6px">% students at each level</div>
+          <div class="bar-chart" id="arith-bar">
+            <div class="bar-row">
+              <div class="bar-label">Cannot Recognize</div>
+              <div class="bar-track"><div class="bar-fill" style="width:4.2%;background:#C1292E">4.2</div></div>
+              <div class="bar-val">4.2%</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Number Recognition</div>
+              <div class="bar-track"><div class="bar-fill" style="width:7.9%;background:#E8612C">7.9</div></div>
+              <div class="bar-val">7.9%</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Addition</div>
+              <div class="bar-track"><div class="bar-fill" style="width:14.8%;background:#F0A500">14.8</div></div>
+              <div class="bar-val">14.8%</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Subtraction</div>
+              <div class="bar-track"><div class="bar-fill" style="width:42.6%;background:#2A5298">42.6</div></div>
+              <div class="bar-val">42.6%</div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">Division ✓</div>
+              <div class="bar-track"><div class="bar-fill" style="width:30.5%;background:#2D6A4F">30.5</div></div>
+              <div class="bar-val">30.5%</div>
+            </div>
+          </div>
+        </div>
+        <div class="insight-box">
+          <div class="ib-label">Key Insight</div>
+          <div class="ib-text">Grade 5 arithmetic proficiency dropped sharply after Subtraction — only 30.5% nationally can do Division vs 73.1% who can Subtract.</div>
+          <div class="ib-data">42.6pp cliff: Sub → Div</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trends + Gender -->
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">5-Year Trend: Bihar vs National Average</div>
+            <div class="card-sub">Story Reading % — Grade 5</div>
+          </div>
+          <span class="card-badge badge-danger">Gap widening</span>
+        </div>
+        <svg class="trend-svg" id="trend-svg" viewBox="0 0 420 180" style="height:180px"></svg>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Govt vs Private School Gap</div>
+            <div class="card-sub">Story Reading % — Grade 5 — All India</div>
+          </div>
+          <span class="card-badge badge-warn">22pp gap</span>
+        </div>
+        <svg class="trend-svg" id="school-svg" viewBox="0 0 420 180" style="height:180px"></svg>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── TAB: HEATMAP ── -->
+  <div id="tab-heatmap" class="tab-panel">
+    <div class="section-header">
+      <div>
+        <div class="section-title">School Risk Heat Map</div>
+        <div class="section-sub">Click any cell to view school details and log an intervention</div>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#C1292E"></div>&lt;30% (Critical)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#E8612C"></div>30–45% (At Risk)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#F0A500"></div>45–60% (Monitor)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#2D6A4F"></div>&gt;60% (On Track)</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">847 Schools · Gaya District, Bihar — Story Reading % by Block</div>
+          <div class="card-sub">Each cell = one school. Color = performance band. Hover for score, click to drill down.</div>
+        </div>
+      </div>
+      <div id="heatmap-container"></div>
+    </div>
+  </div>
+
+  <!-- ── TAB: PRIORITY QUEUE ── -->
+  <div id="tab-priority" class="tab-panel">
+    <div class="section-header">
+      <div>
+        <div class="section-title">Priority Action Queue</div>
+        <div class="section-sub">Schools ranked by composite risk score · Rule: Bottom 20% on both metrics + 2+ consecutive years without improvement</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">How Priority is Calculated</div>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Reading Gap (40%)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:40%;background:var(--indigo-mid)"></div></div>
+            <div class="bar-val">40pt</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Arithmetic Gap (35%)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:35%;background:var(--teal)"></div></div>
+            <div class="bar-val">35pt</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Stagnation Years (25%)</div>
+            <div class="bar-track"><div class="bar-fill" style="width:25%;background:var(--saffron)"></div></div>
+            <div class="bar-val">25pt</div>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:var(--mid);background:var(--paper);border-radius:8px;padding:10px">
+          <strong style="color:var(--ink)">Transparent rule-based scoring</strong> — no black-box AI. DEO can override any ranking with one click and add context.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Distribution: 847 Schools</div>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label" style="color:var(--danger);font-weight:700">P1 Critical</div>
+            <div class="bar-track"><div class="bar-fill" style="width:10.5%;background:#C1292E">89</div></div>
+            <div class="bar-val">89</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="color:#B45309;font-weight:700">P2 At Risk</div>
+            <div class="bar-track"><div class="bar-fill" style="width:18.7%;background:#E8612C">158</div></div>
+            <div class="bar-val">158</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">P3 Monitor</div>
+            <div class="bar-track"><div class="bar-fill" style="width:26%;background:#F0A500">220</div></div>
+            <div class="bar-val">220</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="color:var(--success)">On Track</div>
+            <div class="bar-track"><div class="bar-fill" style="width:44.8%;background:#2D6A4F">380</div></div>
+            <div class="bar-val">380</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-16">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Top Priority Schools — Immediate Action Required</div>
+          <div class="card-sub">P1 Critical: below 25% on reading AND arithmetic for 3+ consecutive years</div>
+        </div>
+        <span class="card-badge badge-danger">89 schools</span>
+      </div>
+      <div class="pq-list" id="pq-list"></div>
+    </div>
+  </div>
+
+  <!-- ── TAB: TRACKER ── -->
+  <div id="tab-tracker" class="tab-panel">
+    <div class="section-header">
+      <div>
+        <div class="section-title">Intervention Tracker</div>
+        <div class="section-sub">Log, monitor, and measure the impact of school-level interventions</div>
+      </div>
+      <button class="btn-primary" onclick="openLogModal()">+ Log New Intervention</button>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-card saffron">
+        <div class="kpi-label">Active Interventions</div>
+        <div class="kpi-value neutral">34</div>
+        <div class="kpi-change flat">Across 34 schools</div>
+      </div>
+      <div class="kpi-card teal">
+        <div class="kpi-label">Avg Reading Lift</div>
+        <div class="kpi-value good">+4.2pp</div>
+        <div class="kpi-change up">Per intervention cycle</div>
+      </div>
+      <div class="kpi-card indigo">
+        <div class="kpi-label">Avg Arithmetic Lift</div>
+        <div class="kpi-value good">+2.8pp</div>
+        <div class="kpi-change up">Per intervention cycle</div>
+      </div>
+      <div class="kpi-card amber">
+        <div class="kpi-label">Pending Review</div>
+        <div class="kpi-value warn">14</div>
+        <div class="kpi-change flat">Due this month</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Recent Interventions & Outcomes</div>
+      </div>
+      <div id="tracker-list"></div>
+    </div>
+  </div>
+
+  <!-- ── TAB: TRENDS ── -->
+  <div id="tab-trends" class="tab-panel">
+    <div class="section-header">
+      <div>
+        <div class="section-title">State-Level Trends: 2019 → 2024</div>
+        <div class="section-sub">Story Reading % · Grade 5 · ASER Rural Reports</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Story Reading % — Select States Comparison</div>
+      </div>
+      <svg id="state-trend-svg" viewBox="0 0 820 300" style="width:100%;height:300px;overflow:visible"></svg>
+    </div>
+
+    <div class="grid-2 mt-16">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Bottom 5 States — Reading (2024)</div>
+          <div class="card-sub">All below 40% — highest intervention need</div>
+        </div>
+        <div class="bar-chart" id="bottom5-read"></div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Top 5 States — Reading (2024)</div>
+          <div class="card-sub">Model states for learning from success</div>
+        </div>
+        <div class="bar-chart" id="top5-read"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<!-- MODAL: School Detail -->
+<div class="modal-overlay" id="school-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('school-modal')">✕</button>
+    <div class="modal-title" id="modal-school-name">GPS Bodh Gaya Primary School</div>
+    <div class="modal-sub" id="modal-school-meta">Block: Bodh Gaya · Students: 124 · Type: Government</div>
+    <div class="modal-grid">
+      <div class="modal-stat">
+        <div class="modal-stat-val bad" id="modal-read" style="color:var(--danger)">22.4%</div>
+        <div class="modal-stat-label">Story Reading %</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-val bad" id="modal-math" style="color:var(--danger)">11.2%</div>
+        <div class="modal-stat-label">Division %</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-val" style="color:var(--saffron)" id="modal-trend">P1 Critical</div>
+        <div class="modal-stat-label">Risk Level</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-val neutral" style="color:var(--mid)" id="modal-years">3 years</div>
+        <div class="modal-stat-label">Below threshold</div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:var(--mid);background:var(--paper);border-radius:8px;padding:10px;margin-bottom:12px" id="modal-insight">
+      This school has been in the bottom 20% for both reading and arithmetic for 3 consecutive years with no recorded intervention.
+    </div>
+    <div class="modal-actions">
+      <button class="btn-primary" onclick="logIntervention(); closeModal('school-modal')">Log Intervention</button>
+      <button class="btn-secondary" onclick="closeModal('school-modal')">Schedule Visit</button>
+      <button class="btn-secondary" onclick="closeModal('school-modal')">View Full History</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Log Intervention -->
+<div class="modal-overlay" id="log-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('log-modal')">✕</button>
+    <div class="modal-title">Log New Intervention</div>
+    <div class="modal-sub">Record an action taken at a school to track its impact over time</div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div>
+        <label style="font-size:12px;font-weight:600;color:var(--mid);display:block;margin-bottom:4px">School</label>
+        <select style="width:100%">
+          <option>GPS Bodh Gaya Primary School</option>
+          <option>GPS Manpur Upper Primary</option>
+          <option>GPS Sherghati Composite</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:12px;font-weight:600;color:var(--mid);display:block;margin-bottom:4px">Intervention Type</label>
+        <select style="width:100%">
+          <option>Teacher training – Foundational literacy</option>
+          <option>Teacher training – Numeracy</option>
+          <option>Additional teaching resource deployment</option>
+          <option>Community volunteer programme</option>
+          <option>Bridge course for Grade 3–5</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:12px;font-weight:600;color:var(--mid);display:block;margin-bottom:4px">Review Date</label>
+        <input type="date" style="width:100%;border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:13px">
+      </div>
+    </div>
+    <div class="modal-actions" style="margin-top:16px">
+      <button class="btn-primary" onclick="logIntervention(); closeModal('log-modal')">Save Intervention</button>
+      <button class="btn-secondary" onclick="closeModal('log-modal')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✓ Intervention logged successfully</div>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────────
+const YEARS = [2019, 2021, 2022, 2023, 2024];
+
+const STATE_DATA = {
+  "Bihar":          {read:[33.1,26.4,27.3,30.9,33.0], math:[16.2,12.8,13.1,15.2,16.8]},
+  "Uttar Pradesh":  {read:[38.4,30.2,31.0,35.1,37.2], math:[19.1,15.3,16.2,18.9,20.1]},
+  "Rajasthan":      {read:[41.2,34.5,36.1,40.3,42.8], math:[21.3,18.4,19.2,22.1,23.5]},
+  "Madhya Pradesh": {read:[44.6,37.2,39.0,43.7,46.1], math:[24.1,20.3,21.5,25.6,27.2]},
+  "All India":      {read:[50.5,42.8,42.8,47.3,50.1], math:[27.9,25.9,25.6,28.2,30.5]},
+  "Maharashtra":    {read:[62.3,54.7,56.2,60.8,63.4], math:[38.4,32.1,33.5,37.9,40.1]},
+  "Tamil Nadu":     {read:[68.4,60.2,62.8,67.1,70.3], math:[42.1,36.4,38.2,41.5,44.8]},
+  "Kerala":         {read:[85.2,79.4,81.3,84.7,87.1], math:[62.3,56.1,58.4,61.9,65.2]},
+};
+
+const SCHOOLS = [
+  {name:"GPS Bodh Gaya Primary",      block:"Bodh Gaya",    read:22.4, math:11.2, years:3, students:124},
+  {name:"GPS Manpur Upper Primary",   block:"Manpur",       read:24.1, math:13.8, years:3, students:98},
+  {name:"GPS Sherghati Composite",    block:"Sherghati",    read:26.7, math:14.1, years:2, students:187},
+  {name:"GPS Amas Primary",           block:"Amas",         read:28.3, math:15.6, years:2, students:145},
+  {name:"GPS Gurpa Middle School",    block:"Gurpa",        read:29.1, math:16.9, years:3, students:203},
+  {name:"GPS Tikari Primary",         block:"Tikari",       read:31.2, math:17.4, years:2, students:167},
+  {name:"GPS Wazirganj Composite",    block:"Wazirganj",    read:32.8, math:18.2, years:1, students:221},
+  {name:"GPS Konch Upper Primary",    block:"Konch",        read:34.5, math:19.7, years:1, students:142},
+];
+
+const INTERVENTIONS = [
+  {school:"GPS Bodh Gaya Primary",    type:"Teacher training – Literacy", date:"Nov 2024", readBefore:18.4, readAfter:22.4, mathBefore:9.8, mathAfter:11.2, status:"active"},
+  {school:"GPS Guraru Middle School", type:"Bridge course Grade 3–5",      date:"Oct 2024", readBefore:28.2, readAfter:33.6, mathBefore:14.1, mathAfter:17.3, status:"done"},
+  {school:"GPS Barachatti Primary",   type:"Community volunteer prog.",    date:"Sep 2024", readBefore:31.4, readAfter:35.8, mathBefore:16.2, mathAfter:18.9, status:"done"},
+  {school:"GPS Fatehpur Composite",   type:"Teacher training – Numeracy",  date:"Dec 2024", readBefore:34.1, readAfter:null,  mathBefore:17.4, mathAfter:null,  status:"pending"},
+  {school:"GPS Dobhi Primary",        type:"Additional resource deploy.",  date:"Jan 2025", readBefore:29.8, readAfter:null,  mathBefore:15.3, mathAfter:null,  status:"pending"},
+];
+
+// ── TAB SWITCHING ─────────────────────────────────────────────────
+function switchTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.currentTarget.classList.add('active');
+  if (id === 'heatmap') renderHeatmap();
+  if (id === 'trends') renderStateTrends();
+  if (id === 'priority') renderPriorityQueue();
+  if (id === 'tracker') renderTracker();
+}
+
+// ── DASHBOARD UPDATE ──────────────────────────────────────────────
+function updateDashboard() {
+  renderTrendSVG();
+  renderSchoolTypeSVG();
+}
+
+// ── TREND SVG ─────────────────────────────────────────────────────
+function renderTrendSVG() {
+  const svg = document.getElementById('trend-svg');
+  const W = 420, H = 180, PAD = {t:20,r:20,b:30,l:40};
+  const gW = W - PAD.l - PAD.r;
+  const gH = H - PAD.t - PAD.b;
+
+  const biharRead  = STATE_DATA["Bihar"].read;
+  const nationalRead = STATE_DATA["All India"].read;
+  const all = [...biharRead, ...nationalRead];
+  const minV = Math.min(...all) - 5;
+  const maxV = Math.max(...all) + 5;
+
+  function px(i) { return PAD.l + (i / (YEARS.length-1)) * gW; }
+  function py(v) { return PAD.t + gH - ((v - minV)/(maxV - minV)) * gH; }
+
+  function polyline(data, color, dash='') {
+    const pts = data.map((v,i) => `${px(i)},${py(v)}`).join(' ');
+    return `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-dasharray="${dash}" stroke-linejoin="round"/>`;
+  }
+  function dots(data, color) {
+    return data.map((v,i) => `<circle cx="${px(i)}" cy="${py(v)}" r="4" fill="${color}" stroke="white" stroke-width="1.5"/>`).join('');
+  }
+  function labels(data, color) {
+    return data.map((v,i) => `<text x="${px(i)}" y="${py(v)-8}" text-anchor="middle" font-size="10" fill="${color}" font-weight="600">${v}%</text>`).join('');
+  }
+
+  // Grid lines
+  let grid = '';
+  for (let v = Math.ceil(minV/10)*10; v <= maxV; v += 10) {
+    const y = py(v);
+    grid += `<line x1="${PAD.l}" x2="${W-PAD.r}" y1="${y}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
+    grid += `<text x="${PAD.l-6}" y="${y+4}" text-anchor="end" font-size="9" fill="#9ca3af">${v}</text>`;
+  }
+  // X axis labels
+  let xLabels = YEARS.map((yr,i) => `<text x="${px(i)}" y="${H-PAD.b+14}" text-anchor="middle" font-size="10" fill="#9ca3af">${yr}</text>`).join('');
+
+  // Legend
+  const legend = `
+    <line x1="${W-90}" y1="${PAD.t+8}" x2="${W-75}" y2="${PAD.t+8}" stroke="#C1292E" stroke-width="2.5"/>
+    <text x="${W-72}" y="${PAD.t+12}" font-size="10" fill="#374151">Bihar</text>
+    <line x1="${W-90}" y1="${PAD.t+22}" x2="${W-75}" y2="${PAD.t+22}" stroke="#2A5298" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="${W-72}" y="${PAD.t+26}" font-size="10" fill="#374151">National</text>
+  `;
+
+  svg.innerHTML = `
+    <g font-family="DM Sans, sans-serif">
+      ${grid}
+      ${polyline(nationalRead, '#2A5298', '5,3')}
+      ${polyline(biharRead, '#C1292E')}
+      ${dots(nationalRead, '#2A5298')}
+      ${dots(biharRead, '#C1292E')}
+      ${labels(biharRead, '#C1292E')}
+      ${xLabels}
+      ${legend}
+    </g>
+  `;
+}
+
+function renderSchoolTypeSVG() {
+  const svg = document.getElementById('school-svg');
+  const W = 420, H = 180, PAD = {t:20,r:20,b:30,l:40};
+  const gW = W - PAD.l - PAD.r;
+  const gH = H - PAD.t - PAD.b;
+
+  const govtRead    = [42.8,35.4,36.1,40.2,42.9];
+  const privateRead = [65.3,58.2,59.8,62.4,65.1];
+  const all = [...govtRead, ...privateRead];
+  const minV = Math.min(...all) - 5;
+  const maxV = Math.max(...all) + 5;
+
+  function px(i) { return PAD.l + (i / (YEARS.length-1)) * gW; }
+  function py(v) { return PAD.t + gH - ((v - minV)/(maxV - minV)) * gH; }
+  function polyline(data, color, dash='') {
+    const pts = data.map((v,i) => `${px(i)},${py(v)}`).join(' ');
+    return `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-dasharray="${dash}" stroke-linejoin="round"/>`;
+  }
+  function dots(data, color) {
+    return data.map((v,i) => `<circle cx="${px(i)}" cy="${py(v)}" r="4" fill="${color}" stroke="white" stroke-width="1.5"/>`).join('');
+  }
+  function labels(data, color) {
+    return data.map((v,i) => `<text x="${px(i)}" y="${py(v)-8}" text-anchor="middle" font-size="10" fill="${color}" font-weight="600">${v}%</text>`).join('');
+  }
+
+  let grid = '';
+  for (let v = Math.ceil(minV/10)*10; v <= maxV; v+=10) {
+    const y = py(v);
+    grid += `<line x1="${PAD.l}" x2="${W-PAD.r}" y1="${y}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
+    grid += `<text x="${PAD.l-6}" y="${y+4}" text-anchor="end" font-size="9" fill="#9ca3af">${v}</text>`;
+  }
+  let xLabels = YEARS.map((yr,i) => `<text x="${px(i)}" y="${H-PAD.b+14}" text-anchor="middle" font-size="10" fill="#9ca3af">${yr}</text>`).join('');
+
+  const legend = `
+    <line x1="${W-100}" y1="${PAD.t+8}" x2="${W-85}" y2="${PAD.t+8}" stroke="#E8612C" stroke-width="2.5"/>
+    <text x="${W-82}" y="${PAD.t+12}" font-size="10" fill="#374151">Government</text>
+    <line x1="${W-100}" y1="${PAD.t+22}" x2="${W-85}" y2="${PAD.t+22}" stroke="#2D6A4F" stroke-width="2.5"/>
+    <text x="${W-82}" y="${PAD.t+26}" font-size="10" fill="#374151">Private</text>
+  `;
+
+  svg.innerHTML = `
+    <g font-family="DM Sans, sans-serif">
+      ${grid}
+      ${polyline(govtRead, '#E8612C')}
+      ${polyline(privateRead, '#2D6A4F')}
+      ${dots(govtRead, '#E8612C')}
+      ${dots(privateRead, '#2D6A4F')}
+      ${labels(govtRead, '#E8612C')}
+      ${xLabels}
+      ${legend}
+    </g>
+  `;
+}
+
+// ── HEAT MAP ──────────────────────────────────────────────────────
+function renderHeatmap() {
+  const container = document.getElementById('heatmap-container');
+  const blocks = ["Bodh Gaya","Manpur","Sherghati","Amas","Gurpa","Tikari","Wazirganj","Konch","Guraru","Barachatti","Fatehpur","Dobhi"];
+
+  function randScore(base, spread) {
+    return +(base + (Math.random()-0.5)*spread*2).toFixed(1);
+  }
+  function scoreColor(v) {
+    if (v < 30) return '#C1292E';
+    if (v < 45) return '#E8612C';
+    if (v < 60) return '#F0A500';
+    return '#2D6A4F';
+  }
+
+  let html = '<div style="overflow-x:auto">';
+  const yr = parseInt(document.getElementById('f-year')?.value || 2024);
+  const metric = document.getElementById('f-metric')?.value || 'read';
+
+  blocks.forEach(block => {
+    const baseRead = STATE_DATA["Bihar"].read[YEARS.indexOf(yr)] || 33;
+    const baseMath = STATE_DATA["Bihar"].math[YEARS.indexOf(yr)] || 16.8;
+    const base = metric === 'read' ? baseRead : baseMath;
+
+    html += `<div class="hm-row" style="margin-bottom:6px">`;
+    html += `<div class="hm-label" title="${block}">${block}</div>`;
+    const nSchools = Math.floor(8 + Math.random()*12);
+    for (let s = 0; s < nSchools; s++) {
+      const score = Math.max(5, Math.min(95, randScore(base, 15)));
+      const color = scoreColor(score);
+      html += `<div class="hm-cell" style="background:${color}" 
+        title="${block} School #${s+1}: ${score}%"
+        onclick="openSchoolModal('${block} School #${s+1}', '${block}', ${score}, ${Math.max(5,score*0.52).toFixed(1)}, ${score < 30 ? 'P1 Critical' : score < 45 ? 'P2 At Risk' : 'P3 Monitor'})">
+        ${score}
+      </div>`;
+    }
+    html += `</div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+// ── PRIORITY QUEUE ────────────────────────────────────────────────
+function renderPriorityQueue() {
+  const list = document.getElementById('pq-list');
+  list.innerHTML = SCHOOLS.map((s, i) => {
+    const priority = i < 3 ? 'p1' : i < 6 ? 'p2' : 'p3';
+    const pLabel = i < 3 ? 'P1' : i < 6 ? 'P2' : 'P3';
+    return `
+      <div class="pq-item" onclick="openSchoolModal('${s.name}', '${s.block}', ${s.read}, ${s.math}, '${priority === 'p1' ? 'P1 Critical' : priority === 'p2' ? 'P2 At Risk' : 'P3 Monitor'}')">
+        <div class="pq-rank ${priority}">${pLabel}</div>
+        <div class="pq-body">
+          <div class="pq-name">${s.name}</div>
+          <div class="pq-meta">Block: ${s.block} · ${s.students} students · ${s.years} yr${s.years>1?'s':''} below threshold</div>
+        </div>
+        <div class="pq-scores">
+          <span class="pq-score score-read">Read: ${s.read}%</span>
+          <span class="pq-score score-math">Math: ${s.math}%</span>
+        </div>
+        <button class="pq-action" onclick="event.stopPropagation(); logIntervention()">Log Action</button>
+      </div>
+    `;
+  }).join('');
+}
+
+// ── TRACKER ───────────────────────────────────────────────────────
+function renderTracker() {
+  const list = document.getElementById('tracker-list');
+  list.innerHTML = INTERVENTIONS.map(item => {
+    const readDelta = item.readAfter ? (item.readAfter - item.readBefore).toFixed(1) : null;
+    const mathDelta = item.mathAfter ? (item.mathAfter - item.mathBefore).toFixed(1) : null;
+    const statusClass = item.status === 'active' ? 'status-active' : item.status === 'done' ? 'status-done' : 'status-pending';
+
+    return `
+      <div class="tracker-item">
+        <div class="tracker-status ${statusClass}"></div>
+        <div class="tracker-info">
+          <div class="tracker-name">${item.school}</div>
+          <div class="tracker-detail">${item.type} · Logged: ${item.date}</div>
+        </div>
+        ${readDelta ? `<div class="tracker-delta delta-pos">Read: +${readDelta}pp</div>` : '<div class="tracker-delta delta-nil">Pending</div>'}
+        ${mathDelta ? `<div class="tracker-delta delta-pos" style="margin-left:8px">Math: +${mathDelta}pp</div>` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+// ── STATE TRENDS SVG ──────────────────────────────────────────────
+function renderStateTrends() {
+  const svg = document.getElementById('state-trend-svg');
+  if (!svg) return;
+  const W = 820, H = 300, PAD = {t:30,r:160,b:40,l:50};
+  const gW = W - PAD.l - PAD.r;
+  const gH = H - PAD.t - PAD.b;
+
+  const STATES_SHOW = ["Bihar","Uttar Pradesh","All India","Maharashtra","Tamil Nadu","Kerala"];
+  const COLORS = ["#C1292E","#E8612C","#2A5298","#0E7C7B","#F0A500","#2D6A4F"];
+
+  const allVals = STATES_SHOW.flatMap(s => STATE_DATA[s].read);
+  const minV = Math.min(...allVals) - 3;
+  const maxV = Math.max(...allVals) + 3;
+
+  function px(i) { return PAD.l + (i / (YEARS.length-1)) * gW; }
+  function py(v) { return PAD.t + gH - ((v - minV)/(maxV - minV)) * gH; }
+
+  let grid = '';
+  for (let v = Math.ceil(minV/10)*10; v <= maxV; v+=10) {
+    const y = py(v);
+    grid += `<line x1="${PAD.l}" x2="${W-PAD.r}" y1="${y}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;
+    grid += `<text x="${PAD.l-6}" y="${y+4}" text-anchor="end" font-size="10" fill="#9ca3af">${v}%</text>`;
+  }
+  let xLabels = YEARS.map((yr,i) => `<text x="${px(i)}" y="${H-PAD.b+16}" text-anchor="middle" font-size="11" fill="#6b7280">${yr}</text>`).join('');
+
+  let lines = '', dots = '', legend = '';
+  STATES_SHOW.forEach((state, si) => {
+    const d = STATE_DATA[state].read;
+    const col = COLORS[si];
+    const pts = d.map((v,i) => `${px(i)},${py(v)}`).join(' ');
+    const dash = state === 'All India' ? '6,3' : '';
+    lines += `<polyline points="${pts}" fill="none" stroke="${col}" stroke-width="${state==='All India'?2:2}" stroke-dasharray="${dash}" stroke-linejoin="round"/>`;
+    dots += d.map((v,i) => `<circle cx="${px(i)}" cy="${py(v)}" r="4" fill="${col}" stroke="white" stroke-width="1.5"/>`).join('');
+    const lastX = W - PAD.r + 10;
+    const lastY = py(d[d.length-1]);
+    legend += `<line x1="${lastX}" y1="${lastY}" x2="${lastX+8}" y2="${lastY}" stroke="${col}" stroke-width="2"/>`;
+    legend += `<text x="${lastX+12}" y="${lastY+4}" font-size="11" fill="#374151" font-weight="500">${state}</text>`;
+  });
+
+  svg.innerHTML = `<g font-family="DM Sans, sans-serif">${grid}${lines}${dots}${xLabels}${legend}</g>`;
+
+  // Bottom 5 and Top 5
+  const allStates = Object.keys(STATE_DATA).filter(s => s !== 'All India');
+  const sorted = allStates.map(s => ({name:s, val:STATE_DATA[s].read[4]})).sort((a,b) => a.val - b.val);
+  const bottom5 = document.getElementById('bottom5-read');
+  const top5 = document.getElementById('top5-read');
+  if (bottom5) {
+    bottom5.innerHTML = sorted.slice(0,5).map(s => `
+      <div class="bar-row">
+        <div class="bar-label">${s.name.split(' ')[0]}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${s.val}%;background:#C1292E">${s.val}%</div></div>
+        <div class="bar-val">${s.val}%</div>
+      </div>`).join('');
+  }
+  if (top5) {
+    const top = sorted.slice(-5).reverse();
+    top5.innerHTML = top.map(s => `
+      <div class="bar-row">
+        <div class="bar-label">${s.name.split(' ')[0]}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${s.val}%;background:#2D6A4F">${s.val}%</div></div>
+        <div class="bar-val">${s.val}%</div>
+      </div>`).join('');
+  }
+}
+
+// ── MODAL HELPERS ─────────────────────────────────────────────────
+function openSchoolModal(name, block, read, math, priority) {
+  document.getElementById('modal-school-name').textContent = name;
+  document.getElementById('modal-school-meta').textContent = `Block: ${block} · Type: Government`;
+  document.getElementById('modal-read').textContent = read + '%';
+  document.getElementById('modal-math').textContent = math + '%';
+  document.getElementById('modal-trend').textContent = priority;
+  document.getElementById('modal-trend').style.color = priority.includes('P1') ? 'var(--danger)' : priority.includes('P2') ? 'var(--amber)' : 'var(--indigo-mid)';
+  document.getElementById('modal-years').textContent = (read < 30 ? '3 years' : read < 40 ? '2 years' : '1 year');
+  document.getElementById('modal-insight').textContent =
+    read < 30
+      ? `This school is critically below threshold — ${(50.1-read).toFixed(1)}pp below national average on reading. Immediate teacher-level intervention recommended.`
+      : `This school is below district targets on both metrics. A bridge course or additional resource deployment may help improve outcomes.`;
+  document.getElementById('school-modal').classList.add('open');
+}
+
+function openLogModal() {
+  document.getElementById('log-modal').classList.add('open');
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+}
+
+function logIntervention() {
+  const toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2800);
+}
+
+// Click outside modal to close
+document.querySelectorAll('.modal-overlay').forEach(el => {
+  el.addEventListener('click', e => { if (e.target === el) el.classList.remove('open'); });
+});
+
+// ── INIT ──────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  renderTrendSVG();
+  renderSchoolTypeSVG();
+  renderPriorityQueue();
+  renderTracker();
+});
+</script>
+</body>
+</html>
