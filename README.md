@@ -11,9 +11,7 @@
 
 2. **Configure AI Advisor**:
    Create a `.env` file in the root directory:
-   ```env
-   VITE_ANTHROPIC_KEY=your_anthropic_api_key_here
-   ```
+
 
 3. **Data Setup**:
    Ensure `ASER_FULL_Grade3_4_5_AllStates.csv` is present in `public/data/`.
