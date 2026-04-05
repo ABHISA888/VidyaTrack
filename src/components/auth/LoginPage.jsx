@@ -129,6 +129,7 @@ const LoginPage = () => {
                                         required
                                     />
                                 </div>
+                                <p className="text-[10px] font-bold text-saffron/60 ml-4">Access Key: deo123</p>
                             </div>
 
                             <div className="flex items-center justify-between px-4">
